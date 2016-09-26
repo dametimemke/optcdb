@@ -6485,15 +6485,15 @@ window.details = {
         special: [
 			{
 				"description": "Cuts the current HP of each enemy by 10%",
-				"cooldown": [ 23 ],
+				"cooldown": [ 23, 12 ],
 			},
 			{
 				"description": "Cuts the current HP of each enemy by 20%",
-				"cooldown": [ 28 ],
+				"cooldown": [ 28, 17 ],
 			},
             {
 				"description": "Cuts the current HP of each enemy by 40%",
-				"cooldown": [ 36 ],
+				"cooldown": [ 36, 25 ],
 			},
 		], 
         specialName: "Earth Shattering Fist",
@@ -6503,15 +6503,15 @@ window.details = {
         special: [
 			{
 				"description": "Cuts the current HP of each enemy by 10%",
-				"cooldown": [ 23 ],
+				"cooldown": [ 23, 12 ],
 			},
 			{
 				"description": "Cuts the current HP of each enemy by 20%",
-				"cooldown": [ 28 ],
+				"cooldown": [ 28, 17 ],
 			},
             {
 				"description": "Cuts the current HP of each enemy by 40%",
-				"cooldown": [ 36 ],
+				"cooldown": [ 36, 25 ],
 			},
 		],
         specialName: "Earth Shattering Fist",

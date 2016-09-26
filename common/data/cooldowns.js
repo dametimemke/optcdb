@@ -1255,7 +1255,7 @@ window.cooldowns = [
     [ 21, 14 ],
     [ 19, 12 ],
     [ 18, 12 ],
-    null,//Young Whitebeard
-    null,//Young Whitebeard
+    [ 36, 25 ], //Young Whitebeard
+    [ 36, 25 ], //Young Whitebeard
     
 ];
