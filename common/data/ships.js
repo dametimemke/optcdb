@@ -370,5 +370,13 @@ window.ships = [
         },*/
         atk: function(p) { return p.unit.class.has("Shooter") ? 1.2 : 1; },
     },
+    
+    { // 30
+        name: '3rd Anniversary Thousand Sunny',
+        thumb: null,
+        //description: 'Boosts ATK by 1.5x. Triples experience received.',
+        description: 'Boosts ATK by 1.5x.',
+        atk: function(p) { return 1.5; },
+    }, 
 
 ];
