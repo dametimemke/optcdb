@@ -1591,7 +1591,7 @@ window.units = [
     [ "Red Hair Shanks, Celebrate the Long Cruise", "QCK", [ "Cerebral", "Slasher" ], 5, 30, null, null, null, null, null, null, null, null, null, null, null ],
     [ "Boa Hancock, Celebrate the Long Cruise", "INT", [ "Fighter", "Free Spirit" ], 4, 15, null, null, null, null, null, null, null, null, null, null, null ],
     [ "'Empress' Boa Hancock, Celebrate the Long Cruise", "INT", [ "Fighter", "Free Spirit" ], 5, 30, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "Monkey D Luffy, Gear 4th Boundman", "PSY", [ "Fighter", "Free Spirit" ], 6, 65, 4, 5, 99, 5000000, 1402, 777, 177, 3380, 1600, 400, null ],
+    [ "Monkey D Luffy, Gear 4th Boundman", "PSY", [ "Fighter", "Free Spirit" ], "6+", 65, 4, 5, 99, 5000000, 1402, 777, 177, 3380, 1600, 400, null ],
     ];
     
 // [ "Name", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
