@@ -1257,8 +1257,8 @@ window.families = [
     "Whitey Bay",
     "Whitebeard",
     "Whitebeard",
-    "Donquixote Doflamingo",
-    "Donquixote Doflamingo",
+    "Doflamingo",
+    "Doflamingo",
     "Señor Pink",
     "Señor Pink",
     "Vergo",
@@ -1585,7 +1585,4 @@ window.families = [
     "Orlumbus",
     "Helmeppo",
     "Helmeppo",
-    "Monkey D. Luffy",
-    "Sanji",
-    "Sanji",
 ];

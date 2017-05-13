@@ -17,7 +17,6 @@ controllers.MainCtrl = ['$scope', '$rootScope', '$state', '$stateParams', '$cont
     $scope.copies = null;
 	$scope.slots = null;
 	$scope.specialEvent = false;
-    $scope.special3Event = false;
     $scope.jpnVersion = false;
 	
 	$scope.specialProbabilityProgress = 0;
@@ -32,7 +31,7 @@ controllers.MainCtrl = ['$scope', '$rootScope', '$state', '$stateParams', '$cont
 			return;
 		}
 		$scope.isSpecialReady = false;
-		var data = {copies: $scope.copies, skillups: $scope.skillups, special_event: $scope.specialEvent, special_3event: $scope.special3Event, jpn_server: $scope.jpnVersion};
+		var data = {copies: $scope.copies, skillups: $scope.skillups, special_event: $scope.specialEvent, jpn_server: $scope.jpnVersion};
 		SpecialProbability.compute(data).then(
 			function(data) {
 				if (data.finished == true) {
