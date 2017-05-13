@@ -3176,15 +3176,13 @@ window.details = {
         captainNotes: "A hit below Good or a Miss will boost the ATK of the next unit by 2x, a Good hit by 2.25x, a Great hit by 2.5x and a Perfect hit by 2.75x. This bonus is applied only to Slasher characters."
     },
     719: {
-        special: "Boosts ATK of Cerebral characters by a variable factor for 1 turn, deals 20x character's ATK in DEX damage to all enemies",
-        specialNotes: "The exact multiplier used is chosen based on the crew's current HP at the time the special is activated: above 30% HP, the multiplier used is 1.5x; below 30% HP, it's 2x.",
+        special: "Boosts ATK of Cerebral characters by 2x if HP is below 30% when the special is activated, otherwise boosts ATK of Cerebral characters by 1.5x, deals 20x character's ATK in DEX damage to all enemies",
         specialName: "Sables: Pesado",
         captain: "Boosts ATK of Cerebral characters proportionally to the crew's current HP",
         captainNotes: "#{captainProportional : lower : 1.5 + 1.75 * (1 - (remaining HP) / (total HP)) : 1.5 : 3.25}"
     },
     720: {
-        special: "Boosts ATK of Cerebral characters by a variable factor for 1 turn, deals 20x character's ATK in DEX damage to all enemies",
-        specialNotes: "The exact multiplier used is chosen based on the crew's current HP at the time the special is activated: above 30% HP, the multiplier used is 1.5x; below 30% HP, it's 2x.",
+        special: "Boosts ATK of Cerebral characters by 2x if HP is below 30% when the special is activated, otherwise boosts ATK of Cerebral characters by 1.5x, deals 20x character's ATK in DEX damage to all enemies",
         specialName: "Sables: Pesado",
         captain: "Boosts ATK of Cerebral characters proportionally to the crew's current HP",
         captainNotes: "#{captainProportional : lower : 1.5 + 1.75 * (1 - (remaining HP) / (total HP)) : 1.5 : 3.25}"
@@ -7546,7 +7544,7 @@ window.details = {
         special: [
             {
                 "description": "Deals 25x character's ATK in [QCK] damage to one enemy, and makes [QCK], [DEX], and [PSY] orbs \"beneficial\" to Fighter and Free Spirit characters for 1 turn",
-                "cooldown": [ 14, 9 ],
+                "cooldown": [ 13, 8 ],
             },
             {
                 "description": "Deals 60x character's ATK in [QCK] damage to one enemy, and makes [QCK], [DEX], and [PSY] orbs \"beneficial\" for 3 turns",
@@ -7561,7 +7559,7 @@ window.details = {
         special: [
             {
                 "description": "Deals 25x character's ATK in [QCK] damage to one enemy, and makes [QCK], [DEX], and [PSY] orbs \"beneficial\" to Fighter and Free Spirit characters for 1 turn",
-                "cooldown": [ 14, 9 ],
+                "cooldown": [ 13, 8 ],
             },
             {
                 "description": "Deals 60x character's ATK in [QCK] damage to one enemy, and makes [QCK], [DEX], and [PSY] orbs \"beneficial\" for 3 turns",
@@ -8299,12 +8297,12 @@ window.details = {
     },
     1517: {//Raid Bellamy
         captain: "Boosts ATK of Driven characters by 2x",
-        special: "Cuts the current HP of each enemy by 10%, makes [PSY] and [INT] orbs \"beneficial\" for 1 turn and amplifies the effect of orbs by 1.75x for 1 turn",
+        special: "Cuts the current HP of one enemy by 10%, makes [PSY] and [INT] orbs \"beneficial\" for 1 turn and amplifies the effect of orbs by 1.75x for 1 turn",
         specialName: "Spring Hopper - Bullet",
     },
     1518: {//Raid Bellamy
         captain: "Boosts ATK of Driven characters by 2.5x",
-        special: "Cuts the current HP of each enemy by 10%, makes [PSY] and [INT] orbs \"beneficial\" for 1 turn and amplifies the effect of orbs by 1.75x for 1 turn",
+        special: "Cuts the current HP of one enemy by 10%, makes [PSY] and [INT] orbs \"beneficial\" for 1 turn and amplifies the effect of orbs by 1.75x for 1 turn",
         specialName: "Spring Hopper - Bullet",
     },
     1519: {//Dadan
@@ -8636,12 +8634,12 @@ window.details = {
     },
     1567: {//Kid Boa
         captain: "Boosts ATK and RCV of [QCK] characters by 1.5x",
-        special: "Recovers 13x character's RCV in HP, amplifies the effect of orbs by ???x for 3 turns",
+        special: "Recovers 13x character's RCV in HP, amplifies the effect of orbs by 1.5x for 3 turns",
         specialName: "Boa Special",
     },
     1568: {//Kid Boa
         captain: "Boosts ATK and RCV of [QCK] characters by 2x",
-        special: "Recovers 13x character's RCV in HP, amplifies the effect of orbs by ???x for 3 turns",
+        special: "Recovers 13x character's RCV in HP, amplifies the effect of orbs by 1.5x for 3 turns",
         specialName: "Boa Special",
     },
     1569: {//Anniversary Law
@@ -8769,5 +8767,64 @@ window.details = {
         captain: "Boosts ATK of Slasher and Driven characters by 2x and their RCV by 1.5x",
         special: "If HP is below 5,000 when the special is activated, boosts ATK of Driven and Slasher characters by 1.75x for 1 turn and recovers 10x character's RCV in HP",
         specialName: "Helmeppo Special",
+    },
+    1587: {//Legend Sanji
+        captain: "Boosts ATK of all characters by 2.5x and their HP by 1.3x <br> <b>Action:</b> Sanji Flies into the air for 1 turn, preventing all debuffs to himself. (Including Bind, Despair, and Silence) Next turn, boosts own ATK by an additional 2.5x",
+        captainNotes: "Multiple Sanjis can Jump at the same time. Even while Flying, will still boost all characters by 2.5x. Jumping is not a type boost, and will stack with other boosts",
+        special: "Deals 100,000 fixed damage to all enemies. Changes [BLOCK], [TND], adjacent orbs, and own orb into Matching orbs. Boosts own attack by 2x for 1 turn",
+        sailor: "Makes [RCV] orbs \"beneficial\" for all characters",
+        specialName: "Hell Memories",
+    },
+    1588: {//Legend Sanji
+        captain: "Boosts ATK of all characters by 2.5x and their HP by 1.3x <br> <b>Action:</b> Sanji Flies into the air for 1 turn, preventing all debuffs to himself. (Including Bind, Despair, and Silence) Next turn, boosts own ATK by an additional 2.5x",
+        captainNotes: "Multiple Sanjis can Jump at the same time. Even while Flying, will still boost all characters by 2.5x. Jumping is not a type boost, and will stack with other boosts",
+        special: "Deals 100,000 fixed damage to all enemies. Changes [BLOCK], [TND], adjacent orbs, and own orb into Matching orbs. Boosts own attack by 2x for 1 turn",
+        sailor: "Makes [RCV] orbs \"beneficial\" for all characters",
+        specialName: "Hell Memories",
+    },
+    1589: {//Anniversary Shanks
+        captain: "Boosts Chain Multiplier by 3x",
+        special: "Recover 50% of crew's MAX HP, changes bottom row orbs into matching orbs",
+        specialName: "Sharing a Cup Filled with Emotions",
+    },
+    1590: {//Anniversary Shanks
+        captain: "Boosts Chain Multiplier by 3.5x, Boosts HP and RCV of all characters by 1.2x",
+        special: "Recover 50% of crew's MAX HP, changes bottom row orbs into matching orbs",
+        specialName: "Sharing a Cup Filled with Emotions",
+    },	
+    1591: {//Anniversary Boa
+        captain: "Boosts ATK and RCV of Fighter and Free Spirit characters by 1.5x",
+        special: "Recovers 3,000 HP and boosts ATK of Free Spirit and Fighter characters by 1.75x for 1 turn",
+        specialName: "Immoral Gaze",
+    },
+    1592: {//Anniversary Boa
+        captain: "Boosts ATK of Fighter and Free Spirit characters by 2.25x and their RCV by 1.75x",
+        special: "Recovers 3,000 HP and boosts ATK of Free Spirit and Fighter characters by 1.75x for 1 turn",
+        specialName: "Immoral Gaze",
+    },
+    1593: {//Gear 4 Luffy
+        captain: "Boosts ATK of Fighter characters by 2.5x. If you use \"King Kong Gun\" THIS LUFFY boosts ATK of Fighter characters by 4x instead for 3 turns and reduces damage taken by 56% for 3 turns.",
+        special: [
+            {
+                "description": "Deals 100x character's ATK in typeless damage to one enemy, and makes [STR], [DEX], [PSY], [INT], [TND], and [RCV] orbs \"beneficial\" for Fighter and Free Spirit characters for 1 turn.  After 3 turns, Binds and Despairs himself for ?? turns.",
+                "cooldown": [ 13, 8 ],
+            },
+            {
+                "description": "Deals 200x character's ATK in typeless damage to one enemy, and makes [STR], [DEX], [PSY], [INT], [TND], and [RCV] orbs \"beneficial\" for Fighter and Free Spirit characters for 3 turns. After 3 turns, Binds and Despairs himself for ?? turns.",
+                "cooldown": [ 18, 13 ],
+            },
+        ],
+        sailor: "Completely resists Paralysis on this character",
+        specialName: "King Kong Gun",
+    },
+    1594: {//Raid Fuji
+        captain: "Cuts the current HP of each enemy by 10% at the end of each turn",
+        special: "Deals 50x character's ATK in [PSY] damage to all enemies that will ignore damage negating abilities and barriers, changes adjacent orbs into Matching Orbs, amplifies the effect of orbs for Powerhouse characters by 2x for 1 turn",
+        specialName: "Gravity Blade: Fierce Tiger",
+    },
+    1595: {//Raid Fuji
+        captain: "Boosts ATK of Powerhouse characters by 2.25x, and their HP by 1.2x, cuts the current HP of each enemy by 10% at the end of each turn",
+        special: "Deals 50x character's ATK in [PSY] damage to all enemies that will ignore damage negating abilities and barriers, changes adjacent orbs into Matching Orbs, amplifies the effect of orbs for Powerhouse characters by 2x for 1 turn",
+        specialName: "Gravity Blade: Fierce Tiger",
     },
 };
