@@ -1594,6 +1594,10 @@ window.units = [
     [ "Monkey D Luffy, Gear 4th Boundman", "PSY", [ "Fighter", "Free Spirit" ], "6+", 65, 4, 5, 99, 5000000, 1402, 777, 177, 3380, 1600, 400, null ],
     [ "Fujitora", "PSY", [ "Powerhouse", "Slasher" ], 4, 30, null, null, null, null, null, null, null, null, null, null, null ],
     [ "Fujitora, Evolved", "PSY", [ "Powerhouse", "Slasher" ], 5, 50, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Shirahoshi FN Character #1", "INT", "Striker", 3, 13, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Shirahoshi FN Character #1 Evolved", "INT", "Striker", 4, 20, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Shirahoshi FN Character #2", "STR", [ "Powerhouse", "Slasher" ], 3, 15, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Shirahoshi FN Character #3", "QCK", [ "Powerhouse", "Slasher" ], 3, 15, null, null, null, null, null, null, null, null, null, null, null ],
     ];
     
 // [ "Name", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
