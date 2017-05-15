@@ -1592,8 +1592,12 @@ window.units = [
     [ "Boa Hancock, Celebrate the Long Cruise", "INT", [ "Fighter", "Free Spirit" ], 4, 15, 6, 3, 50, 392109, null, null, null, 1134, 591, 233, null ],
     [ "'Empress' Boa Hancock, Celebrate the Long Cruise", "INT", [ "Fighter", "Free Spirit" ], 5, 30, 7, 5, 99, 4000000, 1087, 529, 187, 2195, 1289, 401, null ],
     [ "Monkey D Luffy, Gear 4th Boundman", "PSY", [ "Fighter", "Free Spirit" ], "6+", 65, 4, 5, 99, 5000000, 1402, 777, 177, 3380, 1600, 400, null ],
-    [ "Fujitora", "PSY", [ "Powerhouse", "Slasher" ], 4, 30, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "Fujitora, Evolved", "PSY", [ "Powerhouse", "Slasher" ], 5, 50, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Fujitora", "PSY", [ "Powerhouse", "Slasher" ], 4, 30, 6, 2, 70, 1066998, 303, 165, 29, 1344, 700, 144, null ],
+    [ "Fujitora, Evolved", "PSY", [ "Powerhouse", "Slasher" ], 5, 50, 4, 3, 99, 5000000, 1268, 634, 109, 2825, 1420, 254, null ],
+    [ "Shirahoshi FN Character #1", "INT", "Striker", 3, 13, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Shirahoshi FN Character #1 Evolved", "INT", "Striker", 4, 20, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Shirahoshi FN Character #2", "STR", [ "Powerhouse", "Slasher" ], 3, 15, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Shirahoshi FN Character #3", "QCK", [ "Powerhouse", "Slasher" ], 3, 15, null, null, null, null, null, null, null, null, null, null, null ],
     ];
     
 // [ "Name", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
