@@ -1598,7 +1598,7 @@ window.units = [
     [ "Shirahoshi, Evolved", "INT", "Striker", 4, 20, 4, 3, 99, null, 620, 330, 200, 1536, 858, 408, null ],
     [ "Ryuboshi", "STR", [ "Powerhouse", "Slasher" ], 3, 15, 6, 1, 70, null, 123, 87, 29, 1362, 699, 180, null ],
     [ "Manboshi", "QCK", [ "Powerhouse", "Slasher" ], 3, 15, 6, 1, 70, null, 79, 90, 40, 864, 768, 240, null ],
-    [ "Monkey D Luffy, Straw Hat, Heart Pirates Alliance", "PSY", [ "Fighter", "Free Spirit" ], 4, 15, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Monkey D Luffy, Straw Hat • Heart Pirates Alliance", "PSY", [ "Fighter", "Free Spirit" ], 4, 15, 4, 4, 99, null, 209, 113, 12, 2105, 1244, 224, null ],
     ];
     
 // [ "Name", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
