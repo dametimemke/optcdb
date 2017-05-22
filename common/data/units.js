@@ -1602,6 +1602,8 @@ window.units = [
     [ "Coliseum Shiryu", "INT", [ "Slasher", "Driven" ], 4, 25, null, null, null, null, null, null, null, null, null, null, null ],
     [ "Shiryu of the Rain", "INT", [ "Slasher", "Driven" ], 5, 40, null, null, null, null, null, null, null, null, null, null, null ],
     [ "'Lightning God' McGuy, Subordinates of the Whitebeard Pirates", "STR", [ "Slasher", "Cerebral" ], 4, 26, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Luffy's Brother, Portgas D. Ace", "STR", [ "Free Spirit", "Shooter" ], 3, 8, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Whitebeard's Son, Portgas D. Ace", "STR", [ "Free Spirit", "Shooter" ], 4, 15, null, null, null, null, null, null, null, null, null, null, null ],
     ];
     
 // [ "Name", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],

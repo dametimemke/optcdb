@@ -8855,18 +8855,28 @@ window.details = {
     1601: {//Power Creep Shiryu
         captain: "Boosts ATK of Slasher characters by ???x at the start of the chain, by ???x after the 3rd Perfect",
         special: "Instantly defeats all enemies with HP equal to or below 75x character's ATK, removes poison and reduces damage received by 50% for 3 turns,",
-        specialName: "Shiryu Special",
+        specialName: "Stained with blood 'Iron Wall'",
         sailor: "Boosts own ATK by 100 if this character is the last in the chain to attack",
     },
     1602: {//Power Creep Shiryu
         captain: "Boosts ATK of Slasher characters by 2x at the start of the chain, by 3x after the 3rd Perfect",
         special: "Instantly defeats all enemies with HP equal to or below 75x character's ATK, removes poison and reduces damage received by 50% for 3 turns,",
-        specialName: "Shiryu Special",
+        specialName: "Stained with blood 'Iron Wall'",
         sailor: "Boosts own ATK by 100 if this character is the last in the chain to attack",
     },
     1603: {//McGuy
         captain: "Boosts ATK of [STR] characters by 2.25x and their RCV by 1.25x",
         special: "Delays all enemies for 2 turns",
-        specialName: "All Hail Lightning God McGuy Special",
+        specialName: "Paralyzed Cross Section",
+    },
+    1604: {//Training Forest Ace
+        captain: "Boosts ATK of [STR] characters by 1.5x",
+        special: "Deals 13x character's ATK in [STR] damage to all enemies and randomly shuffles all non-matching orbs",
+        specialName: "Fire Fist of the Demon Child",
+    },
+    1605: {//Training Forest Ace Evolved
+        captain: "Boosts ATK of [STR] characters by 2x, and recovers 500 HP at the end of each turn",
+        special: "Deals 13x character's ATK in [STR] damage to all enemies and randomly shuffles all non-matching orbs",
+        specialName: "Fire Fist of the Demon Child",
     },
 };
