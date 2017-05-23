@@ -1602,8 +1602,8 @@ window.units = [
     [ "Shiryu, Blackbeard Pirates", "INT", [ "Slasher", "Driven" ], 4, 25, null, null, null, null, null, null, null, null, null, null, null ],
     [ "Shiryu of the Rain, Blackbeard Pirates", "INT", [ "Slasher", "Driven" ], 5, 40, null, null, null, null, null, null, null, null, null, null, null ],
     [ "Thunder Lord McGuy", "STR", [ "Slasher", "Cerebral" ], 4, 26, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "Portgas D. Ace, Luffy's 'Brother'", "STR", [ "Free Spirit", "Shooter" ], 3, 8, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "Portgas D. Ace, Whitebeard's 'Son'", "STR", [ "Free Spirit", "Shooter" ], 4, 15, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Portgas D. Ace, Luffy's 'Brother'", "STR", [ "Free Spirit", "Shooter" ], 3, 8, 5, 2, 50, 261604, 50, 30, 10, 950, 500, 150, null ],
+    [ "Portgas D. Ace, Whitebeard's 'Son'", "STR", [ "Free Spirit", "Shooter" ], 4, 15, 4, 3, 99, null, 880, 410, 110, 1850, 1090, 260, null ],
     ];
     
 // [ "Name", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
