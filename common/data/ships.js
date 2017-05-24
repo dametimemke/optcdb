@@ -377,7 +377,7 @@ window.ships = [
         name: "3rd Anniversary Thousand Sunny",
         thumb: null,
         //description: 'Boosts ATK by 1.5x. At the start of the adventure, all specials start at MAX charge.',
-        description: 'Boosts ATK by 1.5x. Boosts EXP gained by 3x.',
+        description: 'Boosts ATK by 1.2x.',
         atk: function(p) { return 1.5; },
     },
 
