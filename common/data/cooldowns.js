@@ -1599,9 +1599,9 @@ window.cooldowns = [
     [ 16, 10 ],
     [ 17, 11 ],
     [ 20, 16 ],
-    [ ], //shiryu
-    [ ], //shriyu
-    [ ], //mcguy
-    [ 15, 10 ],
-    [ 15, 10 ],
+//    [ ], //shiryu starts at 29 turn cd
+//    [ ], //shiryu starts at 29 turn cd
+//    [ ], //mcguy
+//    [ 15, 10 ],
+//    [ 15, 10 ],
 ];
