@@ -1601,7 +1601,7 @@ window.units = [
     [ "Monkey D Luffy, Straw Hat • Heart Pirates Alliance", "PSY", [ "Fighter", "Free Spirit" ], 4, 15, 4, 4, 99, 2000000, 209, 113, 12, 2105, 1244, 224, 1 ],
     [ "Shiryu, Blackbeard Pirates", "INT", [ "Slasher", "Driven" ], 4, 25, 6, 3, 70, 1066998, 444, 444, -300, 1099, 750, -300, null ],
     [ "Shiryu of the Rain, Blackbeard Pirates", "INT", [ "Slasher", "Driven" ], 5, 40, 5, 5, 99, null, 1020, 670, -300, 3000, 1505, -300, null ],
-    [ "Thunder Lord McGuy", "STR", [ "Slasher", "Cerebral" ], 4, 26, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Thunder Lord McGuy", "STR", [ "Slasher", "Cerebral" ], 4, 26, 6, 3, 99, null, 151, 90, 98, null, null, null, null ],
     [ "Portgas D. Ace, Luffy's 'Brother'", "STR", [ "Free Spirit", "Shooter" ], 3, 8, 5, 2, 50, 261604, 50, 30, 10, 950, 500, 150, null ],
     [ "Portgas D. Ace, Whitebeard's 'Son'", "STR", [ "Free Spirit", "Shooter" ], 4, 15, 4, 3, 99, null, 880, 410, 110, 1850, 1090, 260, null ],
     ];

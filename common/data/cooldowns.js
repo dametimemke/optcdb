@@ -1601,7 +1601,7 @@ window.cooldowns = [
     [ 20, 16 ],
 //    [ ], //shiryu starts at 29 turn cd
 //    [ ], //shiryu starts at 29 turn cd
-//    [ ], //mcguy
+//    [ ], //mcguy starts at 21 turn cd
 //    [ 15, 10 ],
 //    [ 15, 10 ],
 ];
