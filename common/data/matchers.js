@@ -155,7 +155,7 @@ window.matchers = [
     },
 
     /* * * * * Specials * * * * */
-
+    
     {
         name: 'Type-boosting specials',
         target: 'special',
