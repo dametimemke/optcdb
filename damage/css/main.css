@@ -331,18 +331,22 @@ body, html {
  * BUTTONS & HP BAR *
  ********************/
 
-#hpSlider, #turnSlider {
+#hpSlider, #turnSlider, #healSlider {
     width: 350px;
     height: 12px;
     display: inline-block;
 }
 
-#turnSlider {
+#turnSlider, #healSlider {
     width: 300px;
 }
 
 #turns > .noUi-connect {
     background: orchid;
+}
+
+#heals > .noUi-connect {
+    background: green;
 }
 
 .noUi-handle {
@@ -473,6 +477,8 @@ body, html {
     height: 100%;
     transition: left .1s linear;
     margin-bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #menu.open {
