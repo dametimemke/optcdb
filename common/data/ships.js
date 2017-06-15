@@ -99,12 +99,7 @@ window.ships = [
         name: 'Moby Dick',
         thumb: 'ship_0008_c1.png',
         description: 'Boosts ATK by 1.5x, boosts HP by 1.4x, reduces HP by 50% at the start of the fight',
-        atk: function(p) {
-            return [ 1.2, 1.2, 1.25, 1.3, 1.3, 1.35, 1.4, 1.4, 1.4, 1.5 ][p.boatLevel - 1];
-        },
-        hp: function(p) {
-            return [ 1, 1.1, 1.1, 1.1, 1.2, 1.2, 1.2, 1.25, 1.3, 1.4 ][p.boatLevel - 1];
-        }
+        
     },
 
     { // 8
@@ -412,5 +407,20 @@ window.ships = [
         description: 'Boosts ATK by 1.5x. Boosts EXP gained by 1.5x. ACTIVATED Special: Reduces the defense of all enemies by 25% for 1 turn (cooldown: 16 turns).',
         atk: function(p) { return [ 1.2, 1.2, 1.3, 1.3, 1.4, 1.4, 1.4, 1.4, 1.4, 1.5 ][p.boatLevel - 1]; },
     },
-
+    
+    
+    { //32
+        name: "Blackbeard Ship",
+        thumb: null,
+        description: 'Boosts HP by 1.25x, reduces cooldown of all specials by 1 turn at the start of the fight, and if your crew has a Slasher, Fighter, Striker and Shooter, boosts \crew\'s ATK by 1.55x',
+        atk: function(p) { 
+            return !(p.unit.class.has('Slasher') && p.unit.class.has('Fighter') && p.unit.class.has('Striker') && p.unit.class.has('Shooter')) ? 1 : [ 1.2, 1.2, 1.25, 1.3, 1.35, 1.4, 1.45, 1.5, 1.5, 1.55 ][p.boatLevel - 1];
+        },
+        hp: function(p) {
+            return [ 1.1, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.25 ][p.boatLevel - 1];
+        }
+    },
+    
+    
+    
 ];
