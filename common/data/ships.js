@@ -99,6 +99,12 @@ window.ships = [
         name: 'Moby Dick',
         thumb: 'ship_0008_c1.png',
         description: 'Boosts ATK by 1.5x, boosts HP by 1.4x, reduces HP by 50% at the start of the fight',
+        atk: function(p) {
+            return [ 1.2, 1.2, 1.25, 1.3, 1.3, 1.35, 1.4, 1.4, 1.4, 1.5 ][p.boatLevel - 1]; 
+        },
+        hp: function(p) {
+            return [ 1, 1.1, 1.1, 1.1, 1.2, 1.2, 1.2, 1.25, 1.3, 1.4 ][p.boatLevel -1];
+        }
         
     },
 
