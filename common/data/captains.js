@@ -4874,4 +4874,30 @@ window.captains = {
         atk: function(p) { return !p.unit.class.has("Striker") ? 1 : (p.orb == 2.0 ? 3.75 : 0); },
         hp: function(p) { return p.unit.class.has("Striker") ? 1.25 : 1; }
     },
+    1653: {
+        atk: function(p) { return p.unit.type == "INT" ? 1 : 1; }
+    },
+    1654: {
+        atk: function(p) { return p.unit.type == "INT" ? 2.5 : 1; }
+    },
+    1655: {
+        atk: function(p) { return p.unit.type == "QCK" ? 1 : 1; },
+        rcv: function(p) { return p.unit.type == "QCK" ? 1 : 1; }
+    },
+    1656: {
+        atk: function(p) { return p.unit.type == "QCK" ? 2.25 : 1; },
+        rcv: function(p) { return p.unit.type == "QCK" ? 1.5 : 1; }
+    },
+    1657: {
+        atk: function(p) { return p.unit.class.has("Striker") || p.unit.class.has("Free Spirit") ? 1 : 1; }
+    },
+    1658: {
+        atk: function(p) { return p.unit.class.has("Striker") || p.unit.class.has("Free Spirit") ? 2.5 : 1; }
+    },
+    1659: {
+        atk: function(p) { return p.unit.class.has("Shooter") ? 2.5 : 1; }
+    },
+    1660: {
+        atk: function(p) { return p.unit.class.has("Shooter") ? 2.5 : 1; }
+    },
 };
