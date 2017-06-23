@@ -4866,4 +4866,12 @@ window.captains = {
         atk: function(p) { return p.unit.class.has("Powerhouse") ? 2.25 : 1; },
         hp: function(p) { return p.unit.class.has("Powerhouse") ? 1.5 : 1; }
     },
+    1651: {
+        atk: function(p) { return !p.unit.class.has("Striker") ? 1 : (p.orb == 2.0 ? 3.75 : 0); },
+        hp: function(p) { return p.unit.class.has("Striker") ? 1.25 : 1; }
+    },
+    1652: {
+        atk: function(p) { return !p.unit.class.has("Striker") ? 1 : (p.orb == 2.0 ? 3.75 : 0); },
+        hp: function(p) { return p.unit.class.has("Striker") ? 1.25 : 1; }
+    },
 };
