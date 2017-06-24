@@ -1658,7 +1658,7 @@ window.units = [
     [ "Kanjuro, Wano Country Samurai", "DEX", [ "Striker", "Free Spirit" ], 4, 15, null, 3, 50, 392109, null, null, null, null, null, null, null ],
     [ "Evening Shower Kanjuro, Wano Country Samurai", "DEX", [ "Striker", "Free Spirit" ], 5, 30, 4, 4, 99, 4000000, 1, 1, 1, 2306, 1301, 329, null ],
     [ "Raizo, Wano Country Ninja", "STR", [ "Shooter", "Free Spirit" ], 4, 15, null, 3, 50, 392109, null, null, null, null, null, null, null ],
-    [ "Raizo of the Mist, Wano Country Ninja", "STR", [ "Shooter", "Free Spirit" ], 5, 30, 8, 4, 99, 4000000, 1, 1, 1, 2353, 1363, 290, null ],
+    [ "Raizo of the Mist", "STR", [ "Shooter", "Free Spirit" ], 5, 30, 8, 4, 99, 4000000, 1, 1, 1, 2353, 1363, 290, null ],
     ];
     
 // [ "Name", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
