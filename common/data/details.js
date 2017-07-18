@@ -9412,13 +9412,13 @@ window.details = {
     1681: {//20th Anni Luffy
         captain: "Boosts ATK of characters with cost 30 or less by 2.5x",
         special: "Cuts the current HP of each enemy by 20%, if Luffy is your Captain or Friend/Guest Captain, changes left column into Matching orbs, otherwise, adds .5x to Chain multiplier for 1 turn.",
-        specialName: "Luffy Special",
+        specialName: "Gomu Gomu no Tako Stamp",
         sailor: "Boosts HP and ATK of all characters by 56",
     },
     1682: {//20th Anni Luffy
         captain: "Boosts HP of characters with cost 30 or less by 1.3x and boosts ATK of characters with cost 30 or less by 2.5x at the start of the chain, 3.5x after the 3rd Perfect",
         special: "Cuts the current HP of each enemy by 20%, if Luffy is your Captain or Friend/Guest Captain, changes left column into Matching orbs, otherwise, adds .5x to Chain multiplier for 1 turn.",
-        specialName: "Luffy Special",
+        specialName: "Gomu Gomu no Tako Stamp",
         sailor: "Boosts HP and ATK of all characters by 56",
     },
     1683: {//20th Anni Robin
@@ -9438,14 +9438,14 @@ window.details = {
     1685: {//20th Anni Usopp
         captain: "Boosts ATK of Shooter characters by 2.75x following a chain of Good > Great > Perfect hits",
         special: "Changes [EMPTY] orbs into Matching orbs, changes Badly Matching orbs into [RCV] orbs and delays all enemies for 1 turn",
-        specialName: "Usopp Special",
+        specialName: "Midori Boshi: Take Javelin",
         sailor: "Reduces Silence duration on this character by 4 turns",
         sailorNotes: "#{silence}",
     },
     1686: {//20th Anni Usopp
         captain: "Boosts ATK of Shooter characters by 3.25x following a chain of Good > Great > Perfect hits",
         special: "Changes [EMPTY] orbs into Matching orbs, changes Badly Matching orbs into [RCV] orbs and delays all enemies for 1 turn",
-        specialName: "Usopp Special",
+        specialName: "Midori Boshi: Take Javelin",
         sailor: "Reduces Silence duration on this character by 4 turns",
         sailorNotes: "#{silence}",
     },
