@@ -3218,14 +3218,30 @@ window.captains = {
         }
     },
     1239: {
-        atk: function(p){ 
-            return window.specials[1239].turnedOn || window.specials[1240].turnedOn ? 3 : 2; },
+    	atk: function(p){ 
+        	let captId = p.captain ? p.captain.number+1 : null;
+        	let friendId = p.friendCaptain ? p.friendCaptain.number+1 : null;
+        	if ((p.sourceSlot == 0 && (captId == 1239 || captId == 1240)) 
+        			|| (p.sourceSlot == 1 && (friendId == 1239 || friendId == 1240)))
+        	{
+        		// either captain action can activate ability
+        		return p.actions[0] || p.actions[1] ? 3 : 2;
+        	}
+        	return p.actions[p.sourceSlot] ? 3 : 2; },
         rcv: function(p) { return 1.3 }
     },
     1240: {
         atk: function(p){ 
-            return window.specials[1239].turnedOn || window.specials[1240].turnedOn ? 3 : 2; },
-        rcv: function(p) { return 1.3 }
+        	let captId = p.captain ? p.captain.number+1 : null;
+        	let friendId = p.friendCaptain ? p.friendCaptain.number+1 : null;
+        	if ((p.sourceSlot == 0 && (captId == 1239 || captId == 1240)) 
+        			|| (p.sourceSlot == 1 && (friendId == 1239 || friendId == 1240)))
+        	{
+        		// either captain action can activate ability
+        		return p.actions[0] || p.actions[1] ? 3 : 2;
+        	}
+        	return p.actions[p.sourceSlot] ? 3 : 2; },
+    	rcv: function(p) { return 1.3 }
     },
     1241: {
         chainModifier: function(p) { return 1.5; }

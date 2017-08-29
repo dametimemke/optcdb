@@ -1803,6 +1803,7 @@ window.specials = {
         hit: function(n) { return n > 30 ? 2 : 1; },
         type: "condition"
     },
+    /*
     1239: {
         turnedOn: false,
         onActivation: function(p) {
@@ -1829,6 +1830,7 @@ window.specials = {
             window.specials[1240].turnedOn = false;
         }
     },
+    */
     1241: {
         staticMult: function(p) { return 15; }
     },
