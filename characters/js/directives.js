@@ -11,51 +11,51 @@ var app = angular.module('optc');
 
 directives.characterTable = function($rootScope, $timeout, $compile, $storage) {
     return {
-        restrict: 'E',
-        replace: true,
-        template: '<table id="mainTable" class="table table-striped-column panel panel-default"></table>',
-        link: function(scope, element, attrs) {
-            var table = element.dataTable({
-                iDisplayLength: $storage.get('unitsPerPage', 10),
-                stateSave: true,
-                data: scope.table.data,
-                columns: scope.table.columns,
-                rowCallback: function(row, data, index) {
-                    if (!row || row.hasAttribute('loaded')) return;
-                    var $row = $(row);
-                    if (!$row) return;
-                    // lazy thumbnails
-                    $row.find('[data-original]').each(function(n,x) {
-                        x.setAttribute('src',x.getAttribute('data-original'));
-                        x.removeAttribute('data-original');
-                    });
-                    // character log checkbox
-                    var id = data[data.length - 1] + 1;
-                    var checkbox = $('<label><input type="checkbox" ng-change="checkLog(' + id + ')" ng-model="characterLog[' + id + ']"></input></label>');
-                    $(row.cells[10 + scope.table.additional]).append(checkbox);
-                    // cosmetic fixes
-                    $(row.cells[2]).addClass('cell-' + row.cells[2].textContent);
-                    var n = row.cells.length - 2 - scope.table.additional;
-                    $(row.cells[n]).addClass('stars stars-' + row.cells[n].textContent);
-                    row.cells[n].textContent = '';
-                    // compile
-                    $compile($(row).contents())($rootScope);
-                    if (window.units[id - 1].preview) $(row).addClass('preview');
-                    else if (window.units[id - 1].incomplete) $(row).addClass('incomplete');
-                    row.setAttribute('loaded','true');
-                },
-                headerCallback : function(header) {
-                    if (header.hasAttribute('loaded')) return;
-                    header.cells[header.cells.length - 1].setAttribute('title', 'Character Log');
-                    header.setAttribute('loaded',true);
-                }
-            });
-            scope.table.refresh = function() {
-                $rootScope.$emit('table.refresh');
-                $timeout(function() { element.fnDraw(); });
-            };
+		restrict: 'E',
+		replace: true,
+		template: '<table id="mainTable" class="table table-striped-column panel panel-default"></table>',
+		link: function(scope, element, attrs) {
+			var table = element.dataTable({
+				iDisplayLength: $storage.get('unitsPerPage', 10),
+				stateSave: true,
+				data: scope.table.data,
+				columns: scope.table.columns,
+				rowCallback: function(row, data, index) {
+					if (!row || row.hasAttribute('loaded')) return;
+					var $row = $(row);
+					if (!$row) return;
+					// lazy thumbnails
+					$row.find('[data-original]').each(function(n,x) {
+						x.setAttribute('src',x.getAttribute('data-original'));
+						x.removeAttribute('data-original');
+					});
+					// character log checkbox
+					var id = data[data.length - 1] + 1;
+					var checkbox = $('<label><input type="checkbox" ng-change="checkLog(' + id + ')" ng-model="characterLog[' + id + ']"></input></label>');
+					$(row.cells[10 + scope.table.additional]).append(checkbox);
+					// cosmetic fixes
+					$(row.cells[2]).addClass('cell-' + row.cells[2].textContent);
+					var n = row.cells.length - 2 - scope.table.additional;
+					$(row.cells[n]).addClass('stars stars-' + row.cells[n].textContent);
+					row.cells[n].textContent = '';
+					// compile
+					$compile($(row).contents())($rootScope);
+					if (window.units[id - 1].preview) $(row).addClass('preview');
+					else if (window.units[id - 1].incomplete) $(row).addClass('incomplete');
+					row.setAttribute('loaded','true');
+				},
+				headerCallback : function(header) {
+					if (header.hasAttribute('loaded')) return;
+					header.cells[header.cells.length - 1].setAttribute('title', 'Character Log');
+					header.setAttribute('loaded',true);
+				}
+			});
+			scope.table.refresh = function() {
+				$rootScope.$emit('table.refresh');
+				$timeout(function() { element.fnDraw(); });
+			};
             // report link
-            var link = $('<span class="help-link">Want to report or request something? Use <a>this form</a>.</span>');
+            var link = $('<span class="help-link">Want to report or request something? <a> Join our discord</a>.</span>');
             link.find('a').attr('href', 'https://discord.gg/MRhRrbF');
             link.insertAfter($('.dataTables_length'));
             // pick column link
@@ -96,6 +96,7 @@ directives.decorateSlot = function() {
                 element[0].style.backgroundImage = 'url(' + Utils.getBigThumbnailUrl(scope.uid) + ')';
             else
                 element[0].style.backgroundImage = 'url(' + Utils.getThumbnailUrl(scope.uid) + ')';
+                //element[0].style.backgroundImage = 'url(' + Utils.getGlobalThumbnailUrl(scope.uid) + '), url(' + Utils.getThumbnailUrl(scope.uid) + ')';
         }
     };
 };
@@ -133,8 +134,8 @@ directives.addCaptainOptions = function($timeout, $compile, MATCHER_IDS) {
     
 directives.addSailorOptions = function($timeout, $compile, MATCHER_IDS) {
     //TO DO ONCE WE FIND OUT WHAT SAILOR ABILITIES DO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    /*
-    var TARGET = MATCHER_IDS['captain.ClassBoostingCaptains'];
+    
+    var TARGET = MATCHER_IDS['sailor.ClassBoostingSailors'];
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
@@ -142,17 +143,17 @@ directives.addSailorOptions = function($timeout, $compile, MATCHER_IDS) {
             var filter = $('<div id="class-filters" ng-class="{ enabled: filters.custom[' + TARGET + '] }"></div>');
             var classes = [ 'Fighter', 'Shooter', 'Slasher', 'Striker', 'Free Spirit', 'Cerebral', 'Powerhouse', 'Driven' ];
             classes.forEach(function(x,n) {
-                var template = '<span class="filter subclass %c" ng-class="{ active: filters.classCaptain == \'%s\' }" ' +
-                    'ng-click="onCaptainClick($event,\'%s\')">%s</span>';
+                var template = '<span class="filter subclass %c" ng-class="{ active: filters.classSailor == \'%s\' }" ' +
+                    'ng-click="onSailorClick($event,\'%s\')">%s</span>';
                 filter.append($(template.replace(/%s/g,x).replace(/%c/,'width-6')));
             });
             element.after(filter);
             $compile(filter)(scope);
-            scope.onCaptainClick = function(e,type) {
-                scope.filters.classCaptain = (scope.filters.classCaptain == type ? null : type);
+            scope.onSailorClick = function(e,type) {
+                scope.filters.classSailor = (scope.filters.classSailor == type ? null : type);
             };
         }
-    };*/
+    };
 };
 
 directives.addSpecialOptions = function($timeout, $compile, MATCHER_IDS) {
@@ -203,6 +204,29 @@ directives.addOrbOptions = function($timeout, $compile, MATCHER_IDS) {
                 else orbs[target].splice(orbs[target].indexOf(type), 1);
                 orbs[target] = orbs[target].slice(-2);
                 scope.filters[target] = orbs[target];
+            };
+        }
+    };
+};
+    
+directives.addDebuffOptions = function($timeout, $compile, MATCHER_IDS) {
+    var TARGET = MATCHER_IDS['special.DebuffReducingSpecials'];
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs) {
+            if (scope.n !== TARGET) return;
+            var filter = $('<div id="debuff" ng-class="{ enabled: filters.custom[' + TARGET + '] }"></div>');
+            var debuffs = [ 'Bind', 'Despair', 'Silence', 'Paralysis', 'Blindness', 'Poison', 'Anti-Healing', 'Chain Limit' ];
+            debuffs.forEach(function(x,n) {
+                var template = '<span class="filter debuff %c" ng-class="{ active: filters.debuffs == \'%s\' }" ' +
+                    'ng-click="onDebuffClick($event,\'%s\')">%s</span>';
+                filter.append($(template.replace(/%s/g,x).replace(/%c/,'width-6')));
+            });
+            element.after(filter);
+            $compile(filter)(scope);
+            scope.onDebuffClick = function(e,type) {
+                console.log(scope.filters.debuffs);
+                scope.filters.debuffs = (scope.filters.debuffs == type ? null : type);
             };
         }
     };
@@ -266,10 +290,21 @@ directives.compare = function() {
                     source: function(query, callback) { callback(fuse.search(query)); },
                     templates: {
                         suggestion: function(id) {
-                            var name = units[id].name, url = Utils.getThumbnailUrl(id+1);
-                            if (name.length > 63) name = name.slice(0,60) + '...';
-                            var thumb = '<div class="slot small" style="background-image: url(' + url + ')"></div>';
-                            return '<div><div class="suggestion-container">' + thumb + '<span>' + name + '</span></div></div>';
+                            if (Number.isInteger(id)){
+                                
+                                var name = units[id].name, url = Utils.getThumbnailUrl(id+1);
+                                //var name = units[id].name, url = Utils.getThumbnailUrl(id+1), url2 = Utils.getGlobalThumbnailUrl(id+1);
+                                if (name.length > 63) name = name.slice(0,60) + '...';
+                                var thumb = '<div class="slot small" style="background-image: url(' + url + ')"></div>';
+                                //var thumb = '<div class="slot small" style="background-image: url(' + url2 + '), url(' + url + ')"></div>';
+                                
+                                return '<div><div class="suggestion-container">' + thumb + '<span>' + name + '</span></div></div>';
+                            }
+                            else{
+                                var name = 'material', url = Utils.getThumbnailUrl(id);
+                                var thumb = '<div class="slot small" style="background-image: url(' + url + ')"></div>';
+                                return '<div><div class="suggestion-container">' + thumb + '<span>' + name + '</span></div></div>';
+                            }
                         }
                     },
                     display: function(id) {
@@ -277,7 +312,7 @@ directives.compare = function() {
                     }
                 }
             );
-
+            
             target.bind('typeahead:select',function(e,suggestion) {
                 $(e.currentTarget).prop('disabled', true);
                 scope.compare = window.units[suggestion];
@@ -387,9 +422,9 @@ directives.addTags = function($stateParams, $rootScope) {
                 // sailor effects
                 if (matcher.target.indexOf('sailor') === 0 && matcher.matcher.test(data[matcher.target]) && !(data[matcher.target] === undefined)) {
                     name = matcher.name;
-                    /*if (!/sailor$/.test(name)) name = name.replace(/ers$/,'ing').replace(/s$/,'') + ' sailor';
+                    if (!/sailor$/.test(name)) name = name.replace(/ers$/,'ing').replace(/s$/,'') + ' sailor';
                     else name = name.replace(/s$/,'');
-                    name = name.replace(/iing/,'ying');*/
+                    name = name.replace(/iing/,'ying');
                     element.append($('<span class="tag sailor">' + name + '</div>'));
                 }
                 // specials
@@ -420,8 +455,14 @@ directives.addLinks = function($stateParams) {
                 ul.append($('<li><a href="' + link + '" target="_blank">Official Guide (English)</a></li>'));
             }
             if (!incomplete) {
-                ul.append($('<li><a href="http://onepiece-treasurecruise.com/c-' + id + '" target="_blank">' +
+                if (id == 1478){
+                    ul.append($('<li><a href="http://onepiece-treasurecruise.com/カリブー-カリブー海賊団船長/" target="_blank">' +
                         'Official Guide (Japanese)</a></li>'));
+                }
+                else{
+                    ul.append($('<li><a href="http://onepiece-treasurecruise.com/c-' + id + '" target="_blank">' +
+                        'Official Guide (Japanese)</a></li>'));
+                }
             }
             if (gw[id-1] != null) {
                 ul.append($('<li><a href="http://xn--pck6bvfc.gamewith.jp/article/show/' + gw[id-1] + '" target="_blank">' +

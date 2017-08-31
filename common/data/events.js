@@ -131,22 +131,102 @@ window.events = {
     },
     1313: {
         onInsertion: function($scope) {
-            if (++$scope.options.gOrbsEnabled == 1)
-                $scope.notify({ text: 'Captain ability still being worked on. Use a [G] orb for now to simulate a STR orb on a character. (Will only have 1.5x boost)' });
+            if (++$scope.options.strOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [STR] orbs support.' });
         },
         onRemoval: function($scope) {
-            if (--$scope.options.gOrbsEnabled === 0)
-                $scope.notify({ text: 'Disabling [G] orbs support.' });
+            if (--$scope.options.strOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [STR] orbs support.' });
         }
     },
     1314: {
         onInsertion: function($scope) {
-            if (++$scope.options.gOrbsEnabled == 1)
-                $scope.notify({ text: 'Captain ability still being worked on. Use a [G] orb for now to simulate a STR orb on a character. (Will only have 1.5x boost)' });
+            if (++$scope.options.strOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [STR] orbs support.' });
         },
         onRemoval: function($scope) {
-            if (--$scope.options.gOrbsEnabled === 0)
-                $scope.notify({ text: 'Disabling [G] orbs support.' });
+            if (--$scope.options.strOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [STR] orbs support.' });
+        }
+    },
+    1472: {
+        onInsertion: function($scope) {
+            if (++$scope.options.rainbowOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [RAINBOW] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.rainbowOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [RAINBOW] orbs support.' });
+        }
+    },
+    1473: {
+        onInsertion: function($scope) {
+            if (++$scope.options.rainbowOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [RAINBOW] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.rainbowOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [RAINBOW] orbs support.' });
+        }
+    },
+    1531: {
+        onInsertion: function($scope) {
+            if (++$scope.options.meatOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [MEAT] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.meatOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [MEAT] orbs support.' });
+        }
+    },
+    1532: {
+        onInsertion: function($scope) {
+            if (++$scope.options.meatOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [MEAT] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.meatOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [MEAT] orbs support.' });
+        }
+    },
+    1609: {
+        onInsertion: function($scope) {
+            if (++$scope.options.meatOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [MEAT] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.meatOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [MEAT] orbs support.' });
+        }
+    },
+    1610: {
+        onInsertion: function($scope) {
+            if (++$scope.options.meatOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [MEAT] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.meatOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [MEAT] orbs support.' });
+        }
+    },
+    1651: {
+        onInsertion: function($scope) {
+            if (++$scope.options.meatOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [MEAT] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.meatOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [MEAT] orbs support.' });
+        }
+    },
+    1652: {
+        onInsertion: function($scope) {
+            if (++$scope.options.meatOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [MEAT] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.meatOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [MEAT] orbs support.' });
         }
     },
 };

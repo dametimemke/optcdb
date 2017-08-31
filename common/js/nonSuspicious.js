@@ -45,7 +45,7 @@ window.onload = function() {
     
     //Add new Units with Pics here so they show up in the Updates
     //7 Units are about the Max you can add, otherwise you would need to implement another tr for them
-    var newUnits = [ 1404, 1413, 1414, 1406, 1408, 1410, 1412 ];
+    var newUnits = [ 1619, 1610, 1621, 1623, 1624, 1606, 1605 ];
 
     for (var i = 0, len = newUnits.length; i < len; i++) {
         var unit = document.createElement("a");
@@ -54,6 +54,7 @@ window.onload = function() {
         unit.target = "_blank";
         unit.title = window.units[newUnits[i]-1][0];
         unit.style = "background-image: url("+Utils.getThumbnailUrl(newUnits[i])+");";
+        //unit.style = "background-image: url("+Utils.getGlobalThumbnailUrl(newUnits[i])+"), url("+Utils.getThumbnailUrl(newUnits[i])+");";
         
         document.getElementById("newUnits").appendChild(unit);
     }

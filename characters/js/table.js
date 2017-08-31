@@ -13,6 +13,7 @@ angular.module('optc') .run(function($rootScope, $timeout, $storage, MATCHER_IDS
 
     var addImage = function(data, type, row, meta) {
         return '<img class="slot small" data-original="' + Utils.getThumbnailUrl(row[0]) + '"> ' +
+            //return '<img class="slot small" data-original="' + Utils.getGlobalThumbnailUrl(row[0]) + '" onerror="this.onerror=null;this.src=\'' + Utils.getThumbnailUrl(row[0]) + '\';"> ' +
             '<a ui-sref="main.search.view({ id: ' + parseInt(row[0],10) + '})">' + data + '</a>';
     };
 
@@ -191,11 +192,13 @@ angular.module('optc') .run(function($rootScope, $timeout, $storage, MATCHER_IDS
             }
             if (mismatch) return false;
         }
-        // filter by class-filters
+        // filter by class-filters  
         if ($rootScope.filters.custom[MATCHER_IDS['captain.ClassBoostingCaptains']] && filters.classCaptain &&
                 !CharUtils.isClassBooster('captain', id, filters.classCaptain)) return false;
         if ($rootScope.filters.custom[MATCHER_IDS['special.ClassBoostingSpecials']] && filters.classSpecial &&
                 !CharUtils.isClassBooster('special', id, filters.classSpecial)) return false;
+        if ($rootScope.filters.custom[MATCHER_IDS['sailor.ClassBoostingSailors']] && filters.classSailor &&
+                !CharUtils.isClassBooster('sailor', id, filters.classSailor)) return false;
         return true;
     };
 

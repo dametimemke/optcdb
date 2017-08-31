@@ -102,7 +102,7 @@ CharUtils.searchDropLocations = function(id) {
         for (var island=0;island<window.drops[type].length;++island) {
             var temp = [ ];
             for (var stage in window.drops[type][island]) {
-                if (stage == 'thumb' || stage == 'name' || stage == 'shortName' || stage == 'day' || stage == 'global' || stage == 'condition' || stage == 'completion' || stage == 'challenge' || stage == 'challengeData' || stage == 'showManual') continue;
+                if (stage == 'thumb' || stage == 'name' || stage == 'shortName' || stage == 'day' || stage == 'global' || stage == 'condition' || stage == 'completion' || stage == 'challenge' || stage == 'challengeData' || stage == 'showManual' || stage == 'gamewith' || stage == 'teamDatabase') continue;
                 if (window.drops[type][island][stage].indexOf(id) != -1)
                     temp.push(stage);
             }
@@ -202,7 +202,7 @@ CharUtils.getStatOfUnit = function(unit, stat, level) {
  * Caching *
  ***********/
 
-var orbControllerCache = { }, regexCache = { }, classCache = { captain: { }, special: { } };
+var orbControllerCache = { }, regexCache = { }, classCache = { captain: { }, special: { }, sailor: { } };
 
 CharUtils.getOrbControllerData = function(id) {
     if (orbControllerCache.hasOwnProperty(id) || !window.details[id] || !window.details[id].special)

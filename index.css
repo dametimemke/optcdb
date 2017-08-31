@@ -146,10 +146,11 @@ body {
 .DEX   { background: lightgreen; }
 .PSY   { background: gold; }
 .INT   { background: orchid; }
-.RCV   { background: sandybrown; }
+.RCV   { background: darkgoldenrod; }
 .TND   { background: peru; }
 .BLOCK { background: darkslateblue; }
 .BOMB  { background: maroon; }
+.RAINBOW { background: magenta; }
 .G     { background: orange; }
 .EMPTY { background: #777; }
 
