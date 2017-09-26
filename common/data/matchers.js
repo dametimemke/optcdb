@@ -153,6 +153,12 @@ window.matchers = [
         target: 'captain',
         matcher: /duplicating a drop/i
     },
+    
+    {
+        name: 'End-of-Turn Damage Dealers',
+        target: 'captain',
+        matcher: /to all enemies at the end of each turn/i
+    },
 
     /* * * * * Specials * * * * */
 
