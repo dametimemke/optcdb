@@ -2828,8 +2828,7 @@ window.captains = {
         hitModifiers: ["Good", "Great", "Perfect", "Perfect", "Perfect", "Perfect"]
     },
     1122: {
-        atk: function(p) { return p.slot == p.sourceSlot ? 4 : p.unit.type == "STR" || p.unit.type == "QCK" || p.unit.type == "DEX" ? 2.5 : 1;
-        }  
+        atk: function(p) { return p.slot == p.sourceSlot ? 4 : p.unit.type == "STR" || p.unit.type == "QCK" || p.unit.type == "DEX" ? 2.5 : 1; }  
     },
     1123: {
         atk: function(p) { return p.slot == p.sourceSlot ? 4 : p.unit.type == "STR" || p.unit.type == "QCK" || p.unit.type == "DEX" ? 2.5 : 1; }  
@@ -5445,6 +5444,19 @@ window.captains = {
         atk: function(p) { return p.unit.class.has("Shooter") ? 2.25 : 1; },
         hp: function(p) { return p.unit.class.has("Shooter") ? 1.5 : 1; }
     },
+    1781: {
+        atk: function(p) { return p.unit.class.has("Powerhouse") ? 1.75 : 1; }
+    },
+    1782: {
+        atk: function(p) { return p.unit.type == "2.25" ? 1.75 : 1; },
+    },
+    1783: {
+        atk: function(p) { return p.unit.class.has("Powerhouse") ? 1.5 : 1; },
+        hp: function(p) { return p.unit.class.has("Powerhouse") ? 1.5 : 1; }
+    },
+    1784: {
+        atk: function(p) { return p.unit.stars <= 4 ? 2.5 : 1; }
+    },
     1791: {
         damageSorter: function(d) { return CrunchUtils.typeSort(d, 2.5, [ "QCK", "STR", "DEX" ]); }, 
         hitAtk: function(p) {
@@ -5462,10 +5474,12 @@ window.captains = {
     1793: {
         atk: function(p) { 
             if(p.unit.type == "STR" || p.unit.type == "DEX" || p.unit.type == "QCK"){
-                if(p.colorCount.INT==0 && p.colorCount.PSY==0 && p.colorCount.STR>=1 && p.colorCount.DEX>=1 && p.colorCount.QCK>=1) 
+                if(p.colorCount.INT==0 && p.colorCount.PSY==0 && p.colorCount.STR>=1 && p.colorCount.DEX>=1 && p.colorCount.QCK>=1)
                     return 3.7125;
                 else if(p.colorCount.STR>=1 && p.colorCount.DEX>=1 && p.colorCount.QCK>=1)
                     return 2.75;
+                else if(p.colorCount.INT==0 && p.colorCount.PSY==0)
+                    return 1.35;
                 else
                     return 1; 
                 }
@@ -5482,10 +5496,12 @@ window.captains = {
     1794: {
         atk: function(p) { 
             if(p.unit.type == "STR" || p.unit.type == "DEX" || p.unit.type == "QCK"){
-                if(p.colorCount.INT==0 && p.colorCount.PSY==0 && p.colorCount.STR>=1 && p.colorCount.DEX>=1 && p.colorCount.QCK>=1) 
+                if(p.colorCount.INT==0 && p.colorCount.PSY==0 && p.colorCount.STR>=1 && p.colorCount.DEX>=1 && p.colorCount.QCK>=1)
                     return 3.7125;
                 else if(p.colorCount.STR>=1 && p.colorCount.DEX>=1 && p.colorCount.QCK>=1)
                     return 2.75;
+                else if(p.colorCount.INT==0 && p.colorCount.PSY==0)
+                    return 1.35;
                 else
                     return 1; 
                 }
