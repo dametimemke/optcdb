@@ -3648,6 +3648,14 @@ window.specials = {
     1802: {
         def: function(p) { return 0.1; }
     },
+    1805: {
+		def: function(p) { return .0; },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+    },
+    1806: {
+		def: function(p) { return .0; },
+        orb: function(p) { return CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]); }
+    },
     1811: {
         atk: function(p) { return p.unit.class.has("Fighter") ? 1.5 : 1; },
         type: "class"
