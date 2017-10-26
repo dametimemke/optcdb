@@ -1,0 +1,35 @@
+body {
+    margin: 40px 10px;
+    padding: 0;
+    font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+#footer,
+#optc-agenda,
+#info,
+#mobile-info,
+#disclaimer {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+#disclaimer {
+    font-size: 10px;
+}
+
+#calendar {
+    width: 1052.1px;  /* 150px per cell, with 2.1px of lines */
+    margin: 0 auto;
+}
+
+.fc-title {
+    padding-left: 10px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.fc-bgevent {
+    opacity: 0.75;
+}

@@ -254,6 +254,7 @@ directives.evolution = function($state, $stateParams) {
         templateUrl: 'views/evolution.html',
         link: function(scope, element, attrs) {
             scope.goToState = function(id) {
+                if (!Number.isInteger(id)) return;
                 if (id == parseInt($stateParams.id,10)) return;
                 var previous = $stateParams.previous.concat([ $stateParams.id ]);
                 $state.go('main.search.view',{ id: id, previous: previous });
@@ -435,6 +436,14 @@ directives.addTags = function($stateParams, $rootScope) {
                     name = name.replace(/iing/,'ying');
                     element.append($('<span class="tag special">' + name + '</div>'));
                 }
+                // limit
+                if (matcher.target.indexOf('limit') === 0 && matcher.matcher.test(data[matcher.target])) {
+                    name = matcher.name;
+                    if (!/limit$/.test(name)) name = name.replace(/ers$/,'ing').replace(/s$/,'') + ' limit';
+                    else name = name.replace(/s$/,'');
+                    name = name.replace(/iing/,'ying');
+                    element.append($('<span class="tag limit">' + name + '</div>'));
+                }
             });
         }
     };
@@ -456,11 +465,11 @@ directives.addLinks = function($stateParams) {
             }
             if (!incomplete) {
                 if (id == 1478){
-                    ul.append($('<li><a href="http://onepiece-treasurecruise.com/カリブー-カリブー海賊団船長/" target="_blank">' +
+                    ul.append($('<li><a href="http://onepiece-treasurecruise.com/blog/カリブー-カリブー海賊団船長/" target="_blank">' +
                         'Official Guide (Japanese)</a></li>'));
                 }
                 else{
-                    ul.append($('<li><a href="http://onepiece-treasurecruise.com/c-' + id + '" target="_blank">' +
+                    ul.append($('<li><a href="http://onepiece-treasurecruise.com/blog/c-' + id + '" target="_blank">' +
                         'Official Guide (Japanese)</a></li>'));
                 }
             }

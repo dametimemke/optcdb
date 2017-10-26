@@ -206,6 +206,61 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="panel panel-default" ng-hide="hidden.abilities">
+                        <table class="table table-striped-column abilities">
+                            <tbody>
+                                <tr>
+                                    <td>Limit Break</td>
+                                    <td>
+                                        <!-- same limit break (differences across versions) -->
+                                        <div ng-if="!isLimitHybrid && !isLimitStaged" ng-bind-html="details.limit | decorate"></div>
+                                        <!-- different limit abilities -->
+                                        <div ng-if="!isLimitHybrid && isLimitStaged">
+                                            <div ng-repeat="stage in details.limit track by $index">
+                                                <strong>Level {{$index + 1}}:</strong>
+                                                <span ng-bind-html="stage.description | decorate"></span>
+                                            </div>
+                                        </div>
+                                        <div ng-if="isLimitHybrid">
+                                            <span class="badge badge-japan">Japan</span>
+                                            <div ng-bind-html="details.limit.japan | decorate"></div>
+                                            <span class="badge badge-global">Global</span>
+                                            <div ng-bind-html="details.limit.global | decorate"></div>
+                                        </div>
+                                        <span class="notes" ng-if="details.limitNotes" ng-bind-html="details.limitNotes | notes | decorate"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Potential Abilties</td>
+                                    <td>
+                                        <!-- same potential break (differences across versions) -->
+                                        <div ng-if="!isPotentialHybrid && !isPotentialStaged" ng-bind-html="details.potential | decorate"></div>
+                                        <!-- different potential abilities -->
+                                        <div ng-if="!isPotentialHybrid && isPotentialStaged">
+                                            <div ng-repeat="stage in details.potential track by $index">
+                                                <strong>Potential Ability {{$index + 1}}:</strong>
+                                                 {{stage.Name}}
+                                                <br>
+                                                <span ng-bind-html="stage.description[0] | decorate"></span><br>
+                                                <span ng-bind-html="stage.description[1] | decorate"></span><br>
+                                                <span ng-bind-html="stage.description[2] | decorate"></span><br>
+                                                <span ng-bind-html="stage.description[3] | decorate"></span><br>
+                                                <span ng-bind-html="stage.description[4] | decorate"></span><br>
+                                                <br>
+                                            </div>
+                                        </div>
+                                        <div ng-if="isPotentialHybrid">
+                                            <span class="badge badge-japan">Japan</span>
+                                            <div ng-bind-html="details.potential.japan | decorate"></div>
+                                            <span class="badge badge-global">Global</span>
+                                            <div ng-bind-html="details.potential.global | decorate"></div>
+                                        </div>
+                                        <span class="notes" ng-if="details.potentialNotes" ng-bind-html="details.potentialNotes | notes | decorate"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                     <!-- Abilities (compared unit) -->
 

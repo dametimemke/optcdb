@@ -275,7 +275,7 @@ window.matchers = [
         name: 'Orb matchers',
         target: 'special',
         matcher: /(Changes.+(orb|orbs))[^,]+Matching/i,
-        include: [ 1036, 1037, 1445 ]
+        include: [ 1036, 1037, 1445, 1369, 1370 ]
     },
 
     {
@@ -338,7 +338,7 @@ window.matchers = [
         matcher: /Reduces.+defense/i
     },
 
-    {
+    /*{
         name: 'Meat producers',
         target: 'special',
         matcher: /into( either)?[\s,\[\]A-Zor]+\[RCV\]/
@@ -348,7 +348,7 @@ window.matchers = [
         name: 'Meat converters',
         target: 'special',
         matcher: /\[RCV\].+into/i
-    },
+    },*/
 
     {
         name: 'Damage reducers',
@@ -469,31 +469,31 @@ window.matchers = [
     {
         name: 'Type-boosting sailors',
         target: 'sailor',
-        matcher: /Boosts (ATK|HP|RCV|ATK and HP|ATK and RCV|HP and RCV|ATK, HP and RCV) of[^,]+(STR|DEX|QCK|PSY|INT)\b/i
+        matcher: /Boosts base (ATK|HP|RCV|ATK and HP|ATK and RCV|HP and RCV|ATK, HP and RCV) of[^,]+(STR|DEX|QCK|PSY|INT)\b/i
     },
     
     {
         name: 'Class-boosting sailors',
         target: 'sailor',
-        matcher: /Boosts (ATK|HP|RCV|ATK and HP|ATK and RCV|HP and RCV|ATK, HP and RCV) of[^,]+(Slasher|Striker|Fighter|Shooter|Free Spirit|Cerebral|Powerhouse|Driven)/i
+        matcher: /Boosts base (ATK|HP|RCV|ATK and HP|ATK and RCV|HP and RCV|ATK, HP and RCV) of[^,]+(Slasher|Striker|Fighter|Shooter|Free Spirit|Cerebral|Powerhouse|Driven)/i
     },
     
     {
         name: 'ATK boosting sailors',
         target: 'sailor',
-        matcher: /Boosts ATK/i
+        matcher: /Boosts base ATK/i
     },
 
     {
         name: 'HP boosting sailors',
         target: 'sailor',
-        matcher: /Boosts (HP|ATK and HP|ATK, HP)|Boosts.+and their HP/i
+        matcher: /Boosts base (HP|ATK and HP|ATK, HP)|Boosts.+and their HP/i
     },
 
     {
         name: 'RCV boosting sailors',
         target: 'sailor',
-        matcher: /Boosts (RCV|ATK and RCV|HP and RCV|ATK, HP and RCV)|Boosts.+and their RCV/i
+        matcher: /Boosts base (RCV|ATK and RCV|HP and RCV|ATK, HP and RCV)|Boosts.+and their RCV/i
     },
     
     {
@@ -524,6 +524,50 @@ window.matchers = [
         name: 'Special Rewind Restorers',
         target: 'sailor',
         matcher: /Restores (his|her) own special/i
+    },
+    
+    /* * * * * Limit Break * * * * */
+    
+    {
+        name: 'Has Limit Break',
+        target: 'limit',
+        matcher: /\S/i
+    },
+    
+    {
+        name: 'Enrage Potential Ability',
+        target: 'limit',
+        matcher: /Enrage/i
+    },
+    
+    {
+        name: 'Reduce No Healing Potential Ability',
+        target: 'limit',
+        matcher: /Reduce No Healing/i
+    },
+    
+    {
+        name: 'Critical Hit Potential Ability',
+        target: 'limit',
+        matcher: /Critical Hit/i
+    },
+    
+    {
+        name: 'Slot Bind Self-reduction Potential Ability',
+        target: 'limit',
+        matcher: /Slot Bind Self-reduction/i
+    },
+    
+    {
+        name: 'Barrier Penetration Potential Ability',
+        target: 'limit',
+        matcher: /Barrier Penetration/i
+    },
+    
+    {
+        name: 'Pinch Healing Potential Ability',
+        target: 'limit',
+        matcher: /Pinch Healing/i
     },
 
 ];

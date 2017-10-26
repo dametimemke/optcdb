@@ -435,6 +435,10 @@ window.zombies = {
         type: 'healer',
         multiplier: 4
     },
+    1714: { // Monet
+        type: 'healer',
+        multiplier: 2
+    },
     1728: { // Tashigi
         type: 'healer',
         multiplier: 2
@@ -467,7 +471,19 @@ window.zombies = {
         type: 'healer',
         multiplier: 5
     },
-    1714: { // Monet
+    1778: { // Kizaru
+        type: 'healer',
+        multiplier: 1.5
+    },
+    1785: { // Spartan
+        type: 'healer',
+        multiplier: 3
+    },
+    1821: { // Sanji
+        type: 'healer',
+        multiplier: 1
+    },
+    1822: { // Sanji
         type: 'healer',
         multiplier: 2
     },

@@ -192,11 +192,11 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
             if (orb == 0.5 && x.unit.type == 'DEX' && x.unit.class.has("Fighter")) orb = (window.specials[1593].turnedOn || window.specials[1463]. turnedOn || window.specials[1462]. turnedOn) ? 2 : 0.5;
             if (orb == 0.5 && x.unit.type == 'DEX' && x.unit.class.has("Powerhouse")) orb = (window.specials[1528].turnedOn) ? 2 : 0.5;
             if (orb == 0.5 && x.unit.type == 'DEX' && x.unit.class.has("Free Spirit")) orb = (window.specials[1593].turnedOn) ? 2 : 0.5;
-            if (orb == 0.5 && x.unit.type == 'DEX' && x.unit.class.has("Shooter")) orb = (window.specials[1640].turnedOn || window.specials[1748].turnedOn || window.specials[1749].turnedOn) ? 2 : 0.5;
+            if (orb == 0.5 && x.unit.type == 'DEX' && x.unit.class.has("Shooter")) orb = (window.specials[1640].turnedOn || window.specials[1746].turnedOn || window.specials[1747].turnedOn) ? 2 : 0.5;
             if (orb == 0.5 && x.unit.type == 'DEX' && x.unit.class.has("Striker")) orb = (window.specials[1651].turnedOn || window.specials[1652].turnedOn) ? 2 : 0.5;
             if (orb == 'str') orb = (window.specials[1221].turnedOn || window.specials[1222].turnedOn 
                                  || (window.specials[1259].turnedOn && x.unit.class.has("Driven")) || (window.specials[1260].turnedOn && x.unit.class.has("Driven")) 
-                                 || (window.specials[1323].turnedOn && (x.unit.class.has("Driven") || x.unit.class.has("Slasher"))) || (window.specials[1324].turnedOn && (x.unit.class.has("Driven") || x.unit.class.has("Slasher"))) || (window.specials[1528].turnedOn && x.unit.class.has("Powerhouse")) || (window.specials[1593].turnedOn && (x.unit.class.has("Fighter") || x.unit.class.has("Free Spirit"))) || (window.specials[1640].turnedOn && x.unit.class.has("Shooter")) || ((window.specials[1651].turnedOn || window.specials[1652].turnedOn) && x.unit.class.has("Striker")) || ((window.specials[1748].turnedOn || window.specials[1749].turnedOn) && x.unit.class.has("Shooter"))) ? 2 : 1;
+                                 || (window.specials[1323].turnedOn && (x.unit.class.has("Driven") || x.unit.class.has("Slasher"))) || (window.specials[1324].turnedOn && (x.unit.class.has("Driven") || x.unit.class.has("Slasher"))) || (window.specials[1528].turnedOn && x.unit.class.has("Powerhouse")) || (window.specials[1593].turnedOn && (x.unit.class.has("Fighter") || x.unit.class.has("Free Spirit"))) || (window.specials[1640].turnedOn && x.unit.class.has("Shooter")) || ((window.specials[1651].turnedOn || window.specials[1652].turnedOn) && x.unit.class.has("Striker")) || ((window.specials[1746].turnedOn || window.specials[1747].turnedOn) && x.unit.class.has("Shooter"))) ? 2 : 1;
             
             if (orb == 0.5) orb = (window.specials[1269].turnedOn || window.specials[1270].turnedOn || window.specials[1330].turnedOn || window.specials[1546].turnedOn || window.specials[1547].turnedOn || window.specials[1557].turnedOn) ? 1 : .5;
             
@@ -225,7 +225,7 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
         // apply static multipliers and static bonuses
         for (var i=0;i<enabledEffects.length;++i) {
             if (enabledEffects[i].hasOwnProperty('atkStatic'))
-                result = applyCaptainEffectsToDamage(result,enabledEffects[i].atkStatic,null,true);
+                result = applyCaptainEffectsToDamage(result,enabledEffects[i].atkStatic,null,true,enabledEffects[i].sourceSlot);
             if (enabledEffects[i].hasOwnProperty('atk'))
                 result = applyCaptainEffectsToDamage(result,enabledEffects[i].atk,null,false,enabledEffects[i].sourceSlot);
         }
@@ -377,7 +377,7 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
         
         //Apply Static Bonus Damage From Specials
         var staticBonusDamage = computeFlatBonusDamage(hitModifier);
-        if ((staticBonusDamage > 0) && ((staticBonusDamage - currentDefense)>0)) {
+        if ((staticBonusDamage > 0) && ((staticBonusDamage - currentDefense)>0) && (result.result > 0)) {
             result.result += (staticBonusDamage - currentDefense);
         }
         
@@ -411,8 +411,8 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
             if (key.indexOf(type) !== 0) continue;
             var isStatic = (key.indexOf('Static') !== -1);
             if (isStatic != static) continue;
-            if (static) result += shipBonus.bonus[key]({ boatLevel: shipBonus.level, unit: unit, slot: slot, classCount: classCounter() });
-            else result *= shipBonus.bonus[key]({ boatLevel: shipBonus.level, unit: unit, slot: slot, classCount: classCounter()  });
+            if (static) result += shipBonus.bonus[key]({ boatLevel: shipBonus.level, unit: unit, slot: slot, classCount: classCounter(), colorCount: colorCounter() });
+            else result *= shipBonus.bonus[key]({ boatLevel: shipBonus.level, unit: unit, slot: slot, classCount: classCounter(), colorCount: colorCounter()  });
         }
         return result;
     };
@@ -474,12 +474,16 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
     var applyCaptainEffectsToHP = function(slotNumber,hp) {
         var params = getParameters(slotNumber);
         for (var i=0;i<enabledEffects.length;++i) {
-            if (enabledEffects[i].hasOwnProperty('hpStatic'))
+            if (enabledEffects[i].hasOwnProperty('hpStatic')){
+                params["sourceSlot"] = enabledEffects[i].sourceSlot;
                 hp += enabledEffects[i].hpStatic(params);
+            }
         }
         for (var i=0;i<enabledEffects.length;++i) {
-            if (enabledEffects[i].hasOwnProperty('hp'))
+            if (enabledEffects[i].hasOwnProperty('hp')){
+                params["sourceSlot"] = enabledEffects[i].sourceSlot; 
                 hp *= enabledEffects[i].hp(params);
+            }
         }
         return hp;
     };
@@ -488,12 +492,16 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
         var params = getParameters(slotNumber);
         // static rcv
         for (var h=0;h<enabledSpecials.length;++h) {
-            if (enabledSpecials[h].hasOwnProperty('rcvStatic'))
+            if (enabledSpecials[h].hasOwnProperty('rcvStatic')){
+                params["sourceSlot"] = enabledEffects[h].sourceSlot;
                 rcv += enabledSpecials[h].rcvStatic(params);
+            }
         }
         for (var j=0;j<enabledEffects.length;++j) {
-            if (enabledEffects[j].hasOwnProperty('rcvStatic'))
+            if (enabledEffects[j].hasOwnProperty('rcvStatic')){
+                params["sourceSlot"] = enabledEffects[j].sourceSlot;
                 rcv += enabledEffects[j].rcvStatic(params);
+            }
         }
         // non-static rcv
         for (var i=0;i<enabledEffects.length;++i) {
@@ -891,7 +899,6 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
     };
     
     var getParameters = function(slotNumber, chainPosition) {
-        //console.log($scope.data.actionleft)
         return {
             unit: team[slotNumber].unit,
             orb: $scope.tdata.team[slotNumber].orb,

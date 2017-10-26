@@ -2113,15 +2113,15 @@ window.evolutions = {
     },
     4: {
         evolution: 1387,
-        evolvers: [ 267 ]
+        evolvers: [ 'skullLuffy', 267 ]
     },
     8: {
         evolution: 1388,
-        evolvers: [ 267 ]
+        evolvers: [ 'skullZoro', 267 ]
     },
     12: {
         evolution: 1389,
-        evolvers: [ 267 ]
+        evolvers: [ 'skullNami', 267 ]
     },
     1390: {
         evolution: 1391,
@@ -2165,7 +2165,7 @@ window.evolutions = {
     },
     261: {
         evolution: 1413,
-        evolvers: [ 118, 84, 300, 267 ]
+        evolvers: [ 'skullSTR', 118, 84, 300, 267 ]
     },
     1415: {
         evolution: 1416,
@@ -2217,19 +2217,19 @@ window.evolutions = {
     },
     416: {
         evolution: 1445,
-        evolvers: [ 118, 85, 301, 267 ]
+        evolvers: [ 'skullQCK', 118, 85, 301, 267 ]
     },
     16: {
         evolution: 1446,
-        evolvers: [ 267 ]
+        evolvers: [ 'skullUsopp', 267 ]
     },
     20: {
         evolution: 1447,
-        evolvers: [ 267 ]
+        evolvers: [ 'skullSanji', 267 ]
     },
     22: {
         evolution: 1448,
-        evolvers: [ 267 ]
+        evolvers: [ 'skullChopper', 267 ]
     },
     1449: {
         evolution: 1450,
@@ -2313,7 +2313,7 @@ window.evolutions = {
     },
     669: {
         evolution: 1492,
-        evolvers: [ 118, 87, 303, 267 ]
+        evolvers: [ 'skullPSY', 118, 87, 303, 267 ]
     },
     1505: {
         evolution: [ 1506, 1562 ],
@@ -2377,7 +2377,7 @@ window.evolutions = {
     },
     1532: {
         evolution: 1543,
-        evolvers: [ 118, 86, 302, 267 ]
+        evolvers: [ 'skullDEX', 118, 86, 302, 267 ]
     },
     1544: {
         evolution: 1545,
@@ -2389,15 +2389,15 @@ window.evolutions = {
     },
     709: {
         evolution: 1549,
-        evolvers: [ 267 ]
+        evolvers: [ 'skullRobin', 267 ]
     },
     739: {
         evolution: 1550,
-        evolvers: [ 267 ]
+        evolvers: [ 'skullFranky', 267 ]
     },
     896: {
         evolution: 1551,
-        evolvers: [ 267 ]
+        evolvers: [ 'skullBrook', 267 ]
     },
     1552: {
         evolution: 1553,
@@ -2453,7 +2453,7 @@ window.evolutions = {
     },
     1404: {
         evolution: 1593,
-        evolvers: [ 98, 303, 267 ]
+        evolvers: [ 'skullQCK', 'skullPSY', 98, 303, 267 ]
     },
     1587: {
         evolution: 1588,
@@ -2505,7 +2505,7 @@ window.evolutions = {
     },
     367: {
         evolution: 1619,
-        evolvers: [ 118, 304, 99, 267 ]
+        evolvers: [ 'skullINT', 118, 304, 99, 267 ]
     },
     1620: {
         evolution: 1621,
@@ -2565,7 +2565,7 @@ window.evolutions = {
     },
     748: {
         evolution: 1663,
-        evolvers: [ 118, 95, 300, 267 ]
+        evolvers: [ 'skullSTR', 118, 95, 300, 267 ]
     },
     1664: {
         evolution: 1665,
@@ -2645,7 +2645,7 @@ window.evolutions = {
     },
     530: {
         evolution: 1707,
-        evolvers: [ 118, 98, 303, 267 ]
+        evolvers: [ 'skullPSY', 118, 98, 303, 267 ]
     },
     1708: {
         evolution: 1709,
@@ -2685,7 +2685,7 @@ window.evolutions = {
     },
     1732: {
         evolution: 1733,
-        evolvers: [  ]
+        evolvers: [ 118, 95, 1180, 300, 100 ]
     },
     1734: {
         evolution: 1735,
@@ -2701,27 +2701,27 @@ window.evolutions = {
     },
     1740: {
         evolution: 1741,
-        evolvers: [  ]
+        evolvers: [ 117, 86, 1180, 302, 102 ]
     },
     1742: {
         evolution: 1743,
-        evolvers: [  ]
+        evolvers: [ 117, 84, 1180, 300, 100 ]
     },
     1744: {
         evolution: 1745,
-        evolvers: [  ]
+        evolvers: [ 83, 88, 94, 99, 104 ]
     },
     1746: {
         evolution: 1747,
-        evolvers: [  ]
+        evolvers: [ 118, 266, 94, 98, 267 ]
     },
     1748: {
         evolution: 1749,
-        evolvers: [  ]
+        evolvers: [ 83, 85, 94, 96, 101 ]
     },
     1750: {
         evolution: 1751,
-        evolvers: [  ]
+        evolvers: [ 118, 85, 266, 301, 267 ]
     },
     1752: {
         evolution: 1753,
@@ -2743,12 +2743,140 @@ window.evolutions = {
         evolution: 1761,
         evolvers: [ 80, 86, 91, 97, 102 ]
     },
+    1762: {
+        evolution: 1763,
+        evolvers: [ 118, 79, 1180, 301, 267 ]
+    },
     1192: {
         evolution: 1764,
-        evolvers: [  ]
+        evolvers: [ 'skullQCK', 118, 85, 301, 267 ]
+    },
+    1765: {
+        evolution: 1766,
+        evolvers: [ 117, 80, 86, 97, 102 ]
     },
     1769: {
         evolution: 1770,
+        evolvers: [ 118, 88, 99, 304, 104 ]
+    },
+    1771: {
+        evolution: 1772,
+        evolvers: [ 118, 88, 266, 304, 104 ]
+    },
+    1773: {
+        evolution: 1774,
+        evolvers: [ 117, 82, 88, 99, 104 ]
+    },
+    1775: {
+        evolution: 1776,
+        evolvers: [ 117, 79, 85, 96, 101 ]
+    },
+    1777: {
+        evolution: 1778,
+        evolvers: [ 118, 85, 96, 301, 101 ]
+    },
+    1779: {
+        evolution: 1780,
+        evolvers: [ 118, 86, 266, 302, 102 ]
+    },
+    1791: {
+        evolution: 1792,
+        evolvers: [ 118, 86, 1180, 302, 102 ]
+    },
+    1793: {
+        evolution: 1794,
+        evolvers: [ 118, 100, 101, 102, 267 ]
+    },
+    1795: {
+        evolution: 1796,
+        evolvers: [ 85, 96, 1180, 301, 101 ]
+    },
+    1797: {
+        evolution: 1798,
+        evolvers: [ 83, 94, 97, 302, 102 ]
+    },
+    1799: {
+        evolution: 1800,
+        evolvers: [ 118, 86, 97, 302, 102 ]
+    },
+    1801: {
+        evolution: 1802,
+        evolvers: [ 85, 266, 96, 301, 101 ]
+    },
+    1803: {
+        evolution: 1804,
+        evolvers: [ 117, 80, 91, 97, 102 ]
+    },
+    1805: {
+        evolution: 1806,
+        evolvers: [ 117, 79, 90, 96, 101 ]
+    },
+    1807: {
+        evolution: 1808,
+        evolvers: [ 115, 116, 117, 118, 100 ]
+    },
+    1809: {
+        evolution: 1810,
+        evolvers: [ 117, 81, 87, 98, 103 ]
+    },
+    1811: {
+        evolution: 1812,
+        evolvers: [ 117, 80, 86, 97, 102 ]
+    },
+    1814: {
+        evolution: 1815,
+        evolvers: [ 118, 95, 1180, 300, 100 ]
+    },
+    562: {
+        evolution: 1816,
+        evolvers: [ 'skullDEX', 118, 86, 302, 267 ]
+    },
+    1817: {
+        evolution: 1818,
+        evolvers: [ 117, 82, 88, 99, 104 ]
+    },
+    1821: {
+        evolution: 1822,
+        evolvers: [ 78, 84, 89, 95, 100 ]
+    },
+    1823: {
+        evolution: 1824,
         evolvers: [  ]
+    },
+    1825: {
+        evolution: 1826,
+        evolvers: [ 118, 94, 304, 304, 104 ]
+    },
+    1827: {
+        evolution: 1828,
+        evolvers: [  118, 99, 1180, 304, 104 ]
+    },
+    1829: {
+        evolution: 1830,
+        evolvers: [  ],
+    },
+    1831: {
+        evolution: 1832,
+        evolvers: [  ],
+    },
+    1833: {
+        evolution: 1834,
+        evolvers: [  ],
+    },
+    1835: {
+        evolution: 1836,
+        evolvers: [  ],
+    },
+    1837: {
+        evolution: 1838,
+        evolvers: [  ],
+    },
+    1839: {
+        evolution: 1840,
+        evolvers: [  ],
+    },
+    2000: {
+        evolution: 2001,
+        evolvers: [ 118, 84, 266, 300, 100 ]
     },
 };

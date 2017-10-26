@@ -29,10 +29,10 @@ window.sailors = {
     526: {
         rcvStatic: function(p) { return p.unit.type == "PSY" ? 15 : 0; },
     },
-    527: {//not working
+    527: {
         rcvStatic: function(p) { return p.percHP <= 30.0 && p.slot == p.sourceSlot ? 50 : 0; },
     },
-    528: {//not working
+    528: {
         rcvStatic: function(p) { return p.percHP <= 30.0 && p.slot == p.sourceSlot ? 50 : 0; },
     },
     553: {
@@ -85,10 +85,10 @@ window.sailors = {
     1175: {
         atkStatic: function(p) { return p.unit.class.has("Slasher") ? 20 : 0; },
     },
-    1176: {//not working
+    1176: {
         rcvStatic: function(p) { return p.percHP <= 30.0 && p.slot == p.sourceSlot ? 50 : 0; },
     },
-    1177: {//not working
+    1177: {
         rcvStatic: function(p) { return p.percHP <= 30.0 && p.slot == p.sourceSlot ? 50 : 0; },
     },
     1183: {
@@ -270,10 +270,10 @@ window.sailors = {
     1540: {
         atkStatic: function(p) { return p.unit.type == "INT" ? 50 : 0; },
     },
-    1574: {//not working
+    1574: {
         atkStatic: function(p) { return p.percHP <= 30.0 && p.slot == p.sourceSlot ? 200 : 0; },
     },
-    1575: {//not working
+    1575: {
         atkStatic: function(p) { return p.percHP <= 30.0 && p.slot == p.sourceSlot ? 200 : 0; },
     },
     1613: {//not working
@@ -339,5 +339,25 @@ window.sailors = {
         atkStatic: function(p) { return 40; },
         rcvStatic: function(p) { return 40; },
         hpStatic: function(p) { return 40; },
+    },
+    1773: {
+        atkStatic: function(p) { return p.unit.class.has("Free Spirit") ? 25 : 0; },
+    },
+    1774: {
+        atkStatic: function(p) { return p.unit.class.has("Free Spirit") ? 25 : 0; },
+    },
+//    1795: { wip
+//        atk: function(p) { return p.captain != null ? p.captain.type == "STR" || p.captain.type == "QCK" ? .5 : 1 : 1; },
+//    },
+//    1796: {
+//        atk: function(p) { return p.captain != null ? p.captain.type == "STR" || p.captain.type == "QCK" ? .5 : 1 : 1; },
+//    }, wip
+    1797: {
+        atkStatic: function(p) { return p.unit.type == "STR" || p.unit.type == "DEX" || p.unit.type == "QCK" ? 75 : 0; },
+        hpStatic: function(p) { return p.unit.type == "STR" || p.unit.type == "DEX" || p.unit.type == "QCK" ? 75 : 0; },
+    },
+    1798: {
+        atkStatic: function(p) { return p.unit.type == "STR" || p.unit.type == "DEX" || p.unit.type == "QCK" ? 75 : 0; },
+        hpStatic: function(p) { return p.unit.type == "STR" || p.unit.type == "DEX" || p.unit.type == "QCK" ? 75 : 0; },
     },
 };
