@@ -3806,6 +3806,12 @@ window.specials = {
     1851: {
         chainAddition: function(p) { return 0.5; }
     },
+    1855: {
+        orb: function(p) { return p.unit.class.has("Free Spirit") ? CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1.5, [p.friendCaptain, p.captain]) : CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 1, [p.friendCaptain, p.captain]); }	
+    },
+    1857: {
+        affinity: function(p){ return p.unit.class.has("Powerhouse") ? 1.25 : 1; }
+    },
     1859: {
         staticMult: function(p) { return 65; }
     },
