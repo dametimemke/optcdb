@@ -12993,9 +12993,13 @@ window.details = {
         special: "Changes own orb into [INT], deals 100x character's ATK in typeless damage to all enemies that will ignore damage negating abilities and barriers. If enemies have All Debuff Protection or Delay Debuff Protection at the time the special was activated, amplifies the effect of orbs by 2x for 1 turn. If enemies have a barrier at the time the special was activated, boosts own ATK by 2.25x",
         specialName: "Whitebeard Special",
     },
-    1857: {//Apoo FN
+    1855: {//Apoo FN
         captain: "Boosts ATK of Free Spirit characters by 2x at the start of the chain, by 2.5x after the 3rd Perfect in a row and by 3x after the 5th Perfect in a row",
         special: "For 1 turn boost orbs and ATK by 1.5x for Free Spirit Characters",
+    },
+    1857: {//X-Drake FN
+        captain: "Powerhouse Characters ATK 2.5x, heal 200 HP at the end of the turn",
+        special: "Cut HP of all enemies by 7%, for 1 turn boost the color affinity of powerhouse characters by 1.25x",
     },
     1859: {//Limited RR Leo
         captain: "Boosts ATK of Striker Characters by 2.5x, HP 1.2x, boost ATK by an additional 1.3x after hitting 3 consecutive PERFECT (effectively becoming 3.25x)",
