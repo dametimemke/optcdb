@@ -455,11 +455,11 @@ window.zombies = {
         type: 'healer',
         multiplier: 3
     },
-    1748: { // Boa
+    1746: { // Boa
         type: 'healer',
         amount: 1000
     },
-    1749: { // Boa
+    1747: { // Boa
         type: 'healer',
         amount: 1000
     },
@@ -484,6 +484,14 @@ window.zombies = {
         multiplier: 1
     },
     1822: { // Sanji
+        type: 'healer',
+        multiplier: 2
+    },
+    1857: { // X Drake
+        type: 'healer',
+        amount: 200
+    },
+    2001: { // Rayleigh CHANGE THIS WHEN YOU CHANGE RAYLEIGH
         type: 'healer',
         multiplier: 2
     },

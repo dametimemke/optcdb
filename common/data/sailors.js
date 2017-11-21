@@ -346,12 +346,6 @@ window.sailors = {
     1774: {
         atkStatic: function(p) { return p.unit.class.has("Free Spirit") ? 25 : 0; },
     },
-//    1795: { wip
-//        atk: function(p) { return p.captain != null ? p.captain.type == "STR" || p.captain.type == "QCK" ? .5 : 1 : 1; },
-//    },
-//    1796: {
-//        atk: function(p) { return p.captain != null ? p.captain.type == "STR" || p.captain.type == "QCK" ? .5 : 1 : 1; },
-//    }, wip
     1797: {
         atkStatic: function(p) { return p.unit.type == "STR" || p.unit.type == "DEX" || p.unit.type == "QCK" ? 75 : 0; },
         hpStatic: function(p) { return p.unit.type == "STR" || p.unit.type == "DEX" || p.unit.type == "QCK" ? 75 : 0; },

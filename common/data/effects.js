@@ -2,7 +2,7 @@ window.effects = {
 
     // always use unique IDs, and don't ever change an ID once you've set it
     // IDs must always be greater than 0
-    // last ID used: 42
+    // last ID used: 46
     // Use p.type instead of p.unit.type here
 
     'Baroque Works (pre-v4.0)': {
@@ -10,7 +10,7 @@ window.effects = {
         thumb: 462,
         id: 1, // don't change this
         atk: function(p) { return !p.class.has('Fighter') ? 0.1 : 1; },
-        hp: function(p) { return !p.class.has('Fighter') ? 0.1 : 1; },
+        hp: function(p)  { return !p.class.has('Fighter') ? 0.1 : 1; },
         rcv: function(p) { return !p.class.has('Fighter') ? 0.1 : 1; }
     },
 
@@ -19,7 +19,7 @@ window.effects = {
         thumb: 462,
         id: 2, // don't change this
         atk: function(p) { return p.class.has('Fighter') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
-        hp: function(p) { return p.class.has('Fighter') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
+        hp: function(p)  { return p.class.has('Fighter') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
         rcv: function(p) { return p.class.has('Fighter') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; }
     },
 
@@ -28,7 +28,7 @@ window.effects = {
         thumb: 510,
         id: 3, // don't change this
         atk: function(p) { return !p.class.has('Striker') ? 0.1 : 1; },
-        hp: function(p) { return !p.class.has('Striker') ? 0.1 : 1; },
+        hp: function(p)  { return !p.class.has('Striker') ? 0.1 : 1; },
         rcv: function(p) { return !p.class.has('Striker') ? 0.1 : 1; }
     },
 
@@ -37,7 +37,7 @@ window.effects = {
         thumb: 510,
         id: 4, // don't change this
         atk: function(p) { return p.class.has('Striker') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
-        hp: function(p) { return p.class.has('Striker') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
+        hp: function(p)  { return p.class.has('Striker') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
         rcv: function(p) { return p.class.has('Striker') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; }
     },
 
@@ -46,7 +46,7 @@ window.effects = {
         thumb: 538,
         id: 5, // don't change this
         atk: function(p) { return !p.class.has('Shooter') ? 0.1 : 1; },
-        hp: function(p) { return !p.class.has('Shooter') ? 0.1 : 1; },
+        hp: function(p)  { return !p.class.has('Shooter') ? 0.1 : 1; },
         rcv: function(p) { return !p.class.has('Shooter') ? 0.1 : 1; }
     },
 
@@ -55,7 +55,7 @@ window.effects = {
         thumb: 538,
         id: 6, // don't change this
         atk: function(p) { return p.class.has('Shooter') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
-        hp: function(p) { return p.class.has('Shooter') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
+        hp: function(p)  { return p.class.has('Shooter') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
         rcv: function(p) { return p.class.has('Shooter') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; }
     },
 
@@ -64,7 +64,7 @@ window.effects = {
         thumb: 550,
         id: 7, // don't change this
         atk: function(p) { return !p.class.has('Slasher') ? 0.1 : 1; },
-        hp: function(p) { return !p.class.has('Slasher') ? 0.1 : 1; },
+        hp: function(p)  { return !p.class.has('Slasher') ? 0.1 : 1; },
         rcv: function(p) { return !p.class.has('Slasher') ? 0.1 : 1; }
     },
 
@@ -73,7 +73,7 @@ window.effects = {
         thumb: 550,
         id: 8, // don't change this
         atk: function(p) { return p.class.has('Slasher') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
-        hp: function(p) { return p.class.has('Slasher') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
+        hp: function(p)  { return p.class.has('Slasher') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
         rcv: function(p) { return p.class.has('Slasher') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; }
     },
 
@@ -121,7 +121,7 @@ window.effects = {
         thumb: 713,
         id: 11, // don't change this
         atk: function(p) { return p.class.has('Free Spirit') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
-        hp: function(p) { return p.class.has('Free Spirit') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
+        hp: function(p)  { return p.class.has('Free Spirit') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; },
         rcv: function(p) { return p.class.has('Free Spirit') || p.class.has('Booster') || p.class.has('Evolver') ? 1 : 0.1; }
     },
 
@@ -171,7 +171,7 @@ window.effects = {
     'Kuma': {
         description: 'Damage of STR and DEX characters nullified',
         thumb: 836,
-        id: 18, // don't change this
+        id: 18,  // don't change this
         atk: function(p) { return p.type == 'STR' || p.type == 'DEX' ? 0 : 1; }
     },
 
@@ -425,138 +425,12 @@ window.effects = {
                     [ 1804, 1806 ].indexOf(id) != -1);
             return !matching ? 1 : 2.5;
         },
-    },
-
-    '2x ATK [Figther]': {
-        description: '2x Buff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 44, // don't change this
-        atk: function(p) { return p.class.has("Fighter") ? 2 : 1; },
-    },
-
-    '2x ATK [Shooter]': {
-        description: '2x Buff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 45, // don't change this
-        atk: function(p) { return p.class.has("Shooter") ? 2 : 1; },
-    },
-
-    '2x ATK [Slasher]': {
-        description: '2x Buff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 46, // don't change this
-        atk: function(p) { return p.class.has("Slasher") ? 2 : 1; },
-    },
-
-    '2x ATK [Striker]': {
-        description: '2x Buff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 47, // don't change this
-        atk: function(p) { return p.class.has("Striker") ? 2 : 1; },
-    },
-
-    '2x ATK [Free Spirit]': {
-        description: '2x Buff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 48, // don't change this
-        atk: function(p) { return p.class.has("Free Spirit") ? 2 : 1; },
-    },
-
-    '2x ATK [Cerebral]': {
-        description: '2x Buff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 49, // don't change this
-        atk: function(p) { return p.class.has("Cerebral") ? 2 : 1; },
-    },
-
-    '2x ATK [Powerhouse]': {
-        description: '2x Buff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 50, // don't change this
-        atk: function(p) { return p.class.has("Powerhouse") ? 2 : 1; },
-    },
-
-    '2x ATK [Driven]': {
-        description: '2x Buff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 51, // don't change this
-        atk: function(p) { return p.class.has("Driven") ? 2 : 1; },
-    },
-
-    '0.5x ATK [Figther]': {
-        description: '0.5x Debuff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 52, // don't change this
-        atk: function(p) { return p.class.has("Fighter") ? 0.5 : 1; },
-    },
-
-    '0.5x ATK [Shooter]': {
-        description: '0.5x Debuff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 53, // don't change this
-        atk: function(p) { return p.class.has("Shooter") ? 0.5 : 1; },
-    },
-
-    '0.5x ATK [Slasher]': {
-        description: '0.5x Debuff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 54, // don't change this
-        atk: function(p) { return p.class.has("Slasher") ? 0.5 : 1; },
-    },
-
-    '0.5x ATK [Striker]': {
-        description: '0.5x Debuff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 55, // don't change this
-        atk: function(p) { return p.class.has("Striker") ? 0.5 : 1; },
-    },
-
-    '0.5x ATK [Free Spirit]': {
-        description: '0.5x Debuff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 56, // don't change this
-        atk: function(p) { return p.class.has("Free Spirit") ? 0.5 : 1; },
-    },
-
-    '0.5x ATK [Cerebral]': {
-        description: '0.5x Debuff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 57, // don't change this
-        atk: function(p) { return p.class.has("Cerebral") ? 0.5 : 1; },
-    },
-
-    '0.5x ATK [Powerhouse]': {
-        description: '0.5x Debuff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 58, // don't change this
-        atk: function(p) { return p.class.has("Powerhouse") ? 0.5 : 1; },
-    },
-
-    '0.5x ATK [Driven]': {
-        description: '0.5x Debuff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 59, // don't change this
-        atk: function(p) { return p.class.has("Driven") ? 0.5 : 1; },
-    },
-
-    '2x ATK': {
-        description: '2x Buff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 60, // don't change this
-        atk: function(p) { return p.class.has("Driven") ? 2 : 1; },
-    },
-
-    '0.5x ATK': {
-        description: '0.5x Debuff in Treasure Map [Mihawk Season]',
-        thumb: 1808,
-        id: 61, // don't change this
-        atk: function(p) { return p.class.has("Driven") ? 0.5 : 1; },
-    },
-    
-    'Akainu Neo': {
+	},
+	
+	'Akainu Neo': {
         description: 'Certain units boosted',
         thumb: 1826,
-        id: 62, // don't change this
+        id: 44, // don't change this
         atk: function(p) {
             var id = p.number + 1,
                 matching = ((id > 1740 && id < 1745) ||
@@ -575,12 +449,12 @@ window.effects = {
                     [ 1795, 1796, 1539, 1540, 1823, 1844, 1277, 1278 ].indexOf(id) != -1);
             return !matching ? 1 : 1.75;
         },
-    },
+	},
     
     'Blitz Battle! The Three Admirals': {
         description: 'Lot of units boosted',
         thumb: 1314,
-        id: 63, // don't change this
+        id: 45, // don't change this
         atk: function(p) {
             var id = p.number + 1,
             matching = ((id > 446 && id < 457) || (id > 638 && id < 659) ||
@@ -604,7 +478,7 @@ window.effects = {
     'Sicilian Coloseum': {
         description: 'Certain units boosted',
         thumb: 1828,
-        id: 64, // don't change this
+        id: 46, // don't change this
         atk: function(p) {
             var id = p.number + 1,
             matching = ((id > 1831 && id < 1840) ||
@@ -625,4 +499,94 @@ window.effects = {
         },    
     },
 
+    'Treasure Map [Whitebeard Season]': {
+        description: 'Boost stats of Akainu & Squard 2.5x',
+        thumb: 1853,
+        id: 47, // don't change this
+        atk: function(p) {
+            var id = p.number + 1,
+                matching = ((id > 1848 && id < 1851) ||
+                    [ 1851 ].indexOf(id) != -1);
+            return !matching ? 1 : 2.5;
+        },
+        hp: function(p) {
+            var id = p.number + 1,
+                matching = ((id > 1848 && id < 1851) ||
+                    [ 1851 ].indexOf(id) != -1);
+            return !matching ? 1 : 2.5;
+        },
+        rcv: function(p) {
+            var id = p.number + 1,
+                matching = ((id > 1848 && id < 1851) ||
+                    [ 1851 ].indexOf(id) != -1);
+            return !matching ? 1 : 2.5;
+        },
+    },
+    
+    'Coloseum Kinemon Neo': {
+        description: 'Certain units boosted',
+        thumb: 1863,
+        id: 48, // don't change this
+        atk: function(p) {
+            var id = p.number + 1,
+                matching = ((id > 1858 && id < 1859) ||
+                    [ 1720, 1621, 1631, 1632, 1777, 1778, 1833, 1834, 871, 872, 1695, 1696, 1791, 1792, 1431, 1432 ].indexOf(id) !== -1);
+            return !matching ? 1 : 1.75;
+        },
+        hp: function(p) {
+            var id = p.number + 1,
+                matching = ((id > 1858 && id < 1859) ||
+                    [ 1720, 1621, 1631, 1632, 1777, 1778, 1833, 1834, 871, 872, 1695, 1696, 1791, 1792, 1431, 1432 ].indexOf(id) !== -1);
+            return !matching ? 1 : 1.75;
+        },
+        rcv: function(p) {
+            var id = p.number + 1,
+                matching = ((id > 1858 && id < 1859) ||
+                    [ 1720, 1621, 1631, 1632, 1777, 1778, 1833, 1834, 871, 872, 1695, 1696, 1791, 1792, 1431, 1432 ].indexOf(id) !== -1);
+            return !matching ? 1 : 1.75;
+        }
+    },
+    
+    'Kizaru Neo [GLOBAL] - Free Spirit': {
+        description: 'Chain multiplier reduced.',
+        thumb: 1780,
+        id: 49,
+        //orb: function(p) { return p.orb === 2.0 ? 1.2 : (p.orb === 0.5 ? 5/6 : 1); },
+        atk: function(p) {
+            var id = p.number + 1,
+                matching = ((id > 1777 && id < 1778) ||
+                    [ 1441, 1442, 1701, 1702, 1659, 1660, 1631, 1632, 1699, 1700, 1748, 1749 ].indexOf(id) !== -1);
+            return !matching ? 1 : 1.75;
+        },
+        chainModifier: function(p) { return 0.5 ; }//Chain by half
+    },
+    
+    'Kizaru Neo [GLOBAL] - Striker': {
+        description: 'Chain multiplier halved.',
+        thumb: 1780,
+        id: 50,
+        //orb: function(p) { return p.orb === 2.0 ? 1.2 : (p.orb === 0.5 ? 5/6 : 1); },
+        atk: function(p) {
+            var id = p.number + 1,
+                matching = ((id > 1777 && id < 1778) ||
+                    [ 1441, 1442, 1701, 1702, 1659, 1660, 1631, 1632, 1699, 1700, 1748, 1749 ].indexOf(id) !== -1);
+            return !matching ? 1 : 1.75;
+        },
+        chainModifier: function(p) { return 0.5 ; }//Chain by half
+    },
+    
+    'Kizaru Neo [GLOBAL] - Powerhouse': {
+        description: 'Chain multiplier locked at 1.1x.',
+        thumb: 1780,
+        id: 51,
+        //orb: function(p) { return p.orb === 2.0 ? 1.2 : (p.orb === 0.5 ? 5/6 : 1); },
+        atk: function(p) {
+            var id = p.number + 1,
+                matching = ((id > 1777 && id < 1778) ||
+                    [ 1441, 1442, 1701, 1702, 1659, 1660, 1631, 1632, 1699, 1700, 1748, 1749 ].indexOf(id) !== -1);
+            return !matching ? 1 : 1.75;
+        },
+        chainLimiter: function() { return 1.1; } //Chain locked at 1.1x
+    }
+    
 };

@@ -321,6 +321,12 @@ window.matchers = [
     },
 
     {
+        name: 'Typeless damage dealers',
+        target: 'special',
+        matcher: /Deals.+typeless damage/i
+    },
+
+    {
         name: 'Health cutters',
         target: 'special',
         matcher: /Cuts.+current HP.+enem/i
@@ -429,6 +435,48 @@ window.matchers = [
     },
 
     {
+        name: 'Crew positive buff remover',
+        target: 'special',
+        matcher: /removes.+positive buffs/i 
+    },
+
+    {
+        name: 'Enemy End of Turn buff remover',
+        target: 'special',
+        matcher: /removes.+End of Turn/i 
+    },
+
+    {
+        name: 'Enemy Enrage buff remover',
+        target: 'special',
+        matcher: /removes.+Enrage/i 
+    },
+
+    {
+        name: 'Enemy ATK buff remover',
+        target: 'special',
+        matcher: /(removes|reduces).+ATK up/i 
+    },
+
+    {
+        name: 'Enemy Threshold Damage Reduction remover',
+        target: 'special',
+        matcher: /(removes|reduces).+Threshold Damage Reduction/i 
+    },
+
+    {
+        name: 'Enemy Percent Damage Reduction remover',
+        target: 'special',
+        matcher: /(removes|reduces).+Percent Damage Reduction/i 
+    },
+
+    {
+        name: 'Enemy Increased Defense remover',
+        target: 'special',
+        matcher: /(removes|reduces).+Increased Defense/i 
+    },
+
+    {
         name: 'Zombies',
         target: 'special',
         matcher: /Protects from defeat/i
@@ -505,7 +553,7 @@ window.matchers = [
     {
         name: 'Paralysis reducers',
         target: 'sailor',
-        matcher: /(reduces|removes).+Paralysis/i 
+        matcher: /(reduces|removes|resists).+Paralysis/i 
     },
 
     {
@@ -568,6 +616,12 @@ window.matchers = [
         name: 'Pinch Healing Potential Ability',
         target: 'limit',
         matcher: /Pinch Healing/i
+    },
+    
+    {
+        name: 'Damage Reduction Potential Ability',
+        target: 'limit',
+        matcher: /Damage Reduction/i
     },
 
 ];

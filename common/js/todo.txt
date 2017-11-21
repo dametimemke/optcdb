@@ -1,5 +1,0 @@
-utils: repasar y limpiar después de hacer la DB
-services: cambiar #3 [angular.module('saomd')
-Error: cambiar links y tal
-dismissal: meter lo que quiera en el popup :)
-directives: notes? No sé sobre el resto..
