@@ -6463,10 +6463,17 @@ window.captains = {
                 return 1;
         },
     },
+    1943: {
+        atk: function(p) { return p.unit.class.has("Free Spirit") ? 2.5 : 1; },
+    },
     1944: {
         atk: function(p) { return p.unit.class.has("Cerebral") ? 1 : 1; },
     },
     1945: {
         atk: function(p) { return p.unit.class.has("Cerebral") ? 2.5 : 1; },
+    },
+    1961: {
+        atk: function(p) { return p.unit.type == "PSY" || p.unit.class.has("Fighter") ? p.actions[p.sourceSlot] ? 2.925 : 2.25 : 1; },
+        hp: function(p) { return p.unit.type == "PSY" || p.unit.class.has("Fighter") ? 1.2 : 1; },
     },
 };
