@@ -18672,6 +18672,40 @@ window.details = {
             { "description": "Aquire Potential 2: Slot Bind Self-reduction" },
         ],
     },
+    1942: {//Pink
+        captain: "Boosts Atk of Free Spirit by ???x and recovers ???x character's Rcv at the end of each turn",
+        special: "Changes own orb into Str, reduces Chain Lock and  Chain Coefficent Reduction by 3 turns, and if your Captain is a Free Spirit character, boosts Atk against delayed enemies by 1.75x for 1 turn",
+        specialName: "Manly Synchronized Swimming",
+    },
+    1943: {//Pink
+        captain: "Boosts Atk of Free Spirit by 2.5x and recovers 1.5x character's Rcv at the end of each turn",
+        special: "Changes own orb into Str, reduces Chain Lock and  Chain Coefficent Reduction by 3 turns, and if your Captain is a Free Spirit character, boosts Atk against delayed enemies by 1.75x for 1 turn",
+        specialName: "Manly Synchronized Swimming",
+        limit: "This character has a limit break",
+        potential: [
+            {
+                "Name": "[DEX] Damage Reduction",
+                "description": [ 
+                    "Level 1: Reduce damage taken from [DEX] characters by 1%",
+                    "Level 2: Reduce damage taken from [DEX] characters by ?%",
+                    "Level 3: Reduce damage taken from [DEX] characters by ?%",
+                    "Level 4: Reduce damage taken from [DEX] characters by ?%",
+                    "Level 5: Reduce damage taken from [DEX] characters by ?%"
+                ]
+            },              
+                
+            {
+                "Name": "Pinch Healing",
+                "description": [ 
+                    "Level 1: If HP is below ??% at the start of the turn, heals for ?x this character's RCV at the end of the turn each time you hit a Perfect with this character",
+                    "Level 2: If HP is below ??% at the start of the turn, heals for ?x this character's RCV at the end of the turn each time you hit a Perfect with this character",
+                    "Level 3: If HP is below ??% at the start of the turn, heals for ?x this character's RCV at the end of the turn each time you hit a Perfect with this character",
+                    "Level 4: If HP is below ??% at the start of the turn, heals for ?x this character's RCV at the end of the turn each time you hit a Perfect with this character",
+                    "Level 5: If HP is below ??% at the start of the turn, heals for ?x this character's RCV at the end of the turn each time you hit a Perfect with this character"
+                ]
+            },
+        ]
+    },
     1944: {//Pedro
         captain: "Boosts ATK of Cerebral characters by ???x",
         special: "Reduces crew's current HP by 95%, deals 50x character's ATK in typeless damage to all enemies that will ignore damage negating abilities and barriers, boosts the Color Affinity of Cerebral characters by 1.75x for 2 turns",
@@ -18684,6 +18718,18 @@ window.details = {
         special: "Reduces crew's current HP by 95%, deals 50x character's ATK in typeless damage to all enemies that will ignore damage negating abilities and barriers, boosts the Color Affinity of Cerebral characters by 1.75x for 2 turns",
         specialNotes: "#{ignoreBarrier}",
         specialName: "Pedro Special",
-        limit: "This character probably has a limit break",
+        limit: "This character has a limit break",
+    },
+    1960: {//Sanji
+        captain: "Boosts Atk of Psy and Fighter by ???x and their HP by ???x. If you use his special this turn, boosts their Atk by ???x",
+        special: "Changes Rcv, Block, and Bomb orbs into matching, reduces the special cooldown of Powerhouse and Fighter by 1 turn, and delays all enemies by 1 turn",
+        specialName: "Sanji Special",
+        sailor: "Reduces own Special Rewind by 3 turns",
+    },
+    1961: {//Sanji
+        captain: "Boosts Atk of Psy and Fighter by 2.25x and their HP by 1.2x. If you use his special this turn, boosts their Atk by 2.925x",
+        special: "Changes Rcv, Block, and Bomb orbs into matching, reduces the special cooldown of Powerhouse and Fighter by 1 turn, and delays all enemies by 1 turn",
+        specialName: "Sanji Special",
+        sailor: "Reduces own Special Rewind by 3 turns",
     },
 };
