@@ -4183,6 +4183,13 @@ window.specials = {
         atk: function(p) { return p.unit.type == "STR" || p.unit.type == "QCK" || p.unit.type == "PSY" ? 1.75 : 1; },
         type: "type"
     },
+    1943: {
+        atk: function(p) { if(p.captain.class.has("Free Spirit")){
+            return p.delayed > 0 ? 1.75 : 1;
+        }
+    },
+        type: "condition",
+    },
     1944: {
         affinity: function(p){ return p.unit.class.has("Cerebral") ? 1.75 : 1; }
     },
