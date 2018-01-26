@@ -6364,6 +6364,14 @@ window.captains = {
     1926: {
         atk: function(p) { return p.unit.class.has("Driven") ? 2.5 : 1; },
     },
+    1927: {
+        atk: function(p) {
+            return p.unit.class.has("Cerebral") ? 2 + 1.5 * ((100 - p.percHP) / 100) : 1;
+        }
+    },
+    1928: {
+        atk: function(p) { return p.unit.class.has("Striker") || p.unit.class.has("Driven") ? 3 : 1; },
+    },
     1929: {
         atk: function(p) { return p.unit.type == "DEX" ? 2 : 1; }
     },
@@ -6378,7 +6386,9 @@ window.captains = {
     },
     1933: {
         atk: function(p) {
-            return p.unit.class.has("Fighter") ? 1.75 : p.unit.class.has("Free Spirit") ? 1.5 :
+            return p.unit.class.has("Fighter") && p.unit.class.has("Free Spirit") ? 2.625 :
+                p.unit.class.has("Fighter") && !p.unit.class.has("Free Spirit") ? 1.75 :
+                !p.unit.class.has("Fighter") && p.unit.class.has("Free Spirit") ? 1.5 :
                 1;
         }
     },
@@ -6463,10 +6473,34 @@ window.captains = {
                 return 1;
         },
     },
+    1942: {
+        atk: function(p) { return p.unit.class.has("Free Spirit") ? 1 : 1; },
+    },
+    1943: {
+        atk: function(p) { return p.unit.class.has("Free Spirit") ? 2.5 : 1; },
+    },
     1944: {
         atk: function(p) { return p.unit.class.has("Cerebral") ? 1 : 1; },
     },
     1945: {
         atk: function(p) { return p.unit.class.has("Cerebral") ? 2.5 : 1; },
+    },
+    1947: {
+        atk: function(p) { return p.unit.type == "INT" ? 2 : 1; }
+    },
+    1949: {
+        atk: function(p) { return p.unit.class.has("Powerhouse") ? 2.25 : 1; },
+        hp: function(p) { return p.unit.class.has("Fighter") ? 1.5 : 1; },
+    },
+    1961: {
+        atk: function(p){ 
+            var specialEnabled = false;
+            for(var i=0;i<2;i++)
+            {
+                if(window.specials[1960].turnedOn[i]==true){specialEnabled = true;}//CHANGE THIS LATER WHEN PUDDING? COMES
+                if(window.specials[1961].turnedOn[i]==true){specialEnabled = true;}//CHANGE THIS LATER WHEN PUDDING? COMES
+            }
+            return (p.unit.type == "PSY" || p.unit.class.has("Fighter")) ? specialEnabled ? 2.925 : 2.25 : 1; },
+        hp: function(p) { return (p.unit.type == "PSY" || p.unit.class.has("Fighter")) ? 1.2 : 1 }
     },
 };

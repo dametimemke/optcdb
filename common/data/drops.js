@@ -1848,10 +1848,10 @@ window.drops = {
         },
         
         {
-            name: 'Gorgon Sisters Escape from Mariejois!',
+            name: 'Binding and Bonds!',
             thumb: 1933,
             nakama: 2112095,
-            gamewith: null,
+            gamewith: 86343,
             condition: 'Take 7% current Health in Environmental Damage every 2 turns',
             'All Difficulties': [ 1931, 1932, 1933, -1747, -1318, -1324, -1798, -1749, -1561 ]
         },
@@ -2313,6 +2313,13 @@ window.drops = {
             Ultimate: [ 1923 ],
             Master: [ 1923 ]
         },
+        
+        {
+            name: 'Clash!! Señor Pink',
+            thumb: 1943,
+            Master: [ 1942 ],
+            Expert: [ 1942 ]
+        },
 
     ],
 
@@ -2427,6 +2434,12 @@ window.drops = {
             'Chopper': [ 1464, 1155, 333, 728, 334, 1061, 346, 193, 109, 114, 115, 116, 117, 1180, 266, 94, 83 ],
             'Sanji': [ 1507, 52, 207, 892, 343, 190, 111, 106, 115, 116, 117, 1180, 266, 94, 83 ],
             'Brook': [ 1515, 954, 614, 379, 730, 342, 189, 110, 105, 115, 116, 117, 1180, 266, 94, 83 ],
+        },
+        
+        {
+            name: 'Wedding Sanji',
+            thumb: 1961,
+            'Sanji': [ 1960 ],
         },
 
         {

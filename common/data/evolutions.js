@@ -3059,6 +3059,14 @@ window.evolutions = {
         evolution: 1930,
         evolvers: [ 118, 266, 97, 102, 302 ]
     },
+    720: {
+        evolution: 1927,
+        evolvers: [ 'skullSTR', 118, 84, 300, 267 ]
+    },
+    1035: {
+        evolution: 1928,
+        evolvers: [ 'skullQCK', 118, 85, 301, 267 ]
+    },
     1934: {
         evolution: 1935,
         evolvers: [  ]
@@ -3075,8 +3083,24 @@ window.evolutions = {
         evolution: 1941,
         evolvers: [  ]
     },
+    1942: {
+        evolution: 1943,
+        evolvers: [  ]
+    },
     1944: {
         evolution: 1945,
+        evolvers: [  ]
+    },
+    1946: {
+        evolution: 1947,
+        evolvers: [  ]
+    },
+    1948: {
+        evolution: 1949,
+        evolvers: [  ]
+    },
+    1960: {
+        evolution: 1961,
         evolvers: [  ]
     },
 };
