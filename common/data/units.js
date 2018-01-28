@@ -1942,7 +1942,7 @@ window.units = [
     [ "Fire Fist Ace, Spiritual Flames", "STR", [ "Free Spirit", "Fighter" ], 5, 60, 4, 1, 99, 5000000, 856, 295, 88, 2951, 1372, 205, 1 ],
     [ "Señor Pink", "STR", [ "Free Spirit", "Fighter" ], 4, 30, null, null, null, null, null, null, null, null, null, null, null ],
     [ "Señor Pink, A Man's Battle", "STR", [ "Free Spirit", "Fighter" ], 5, 50, 4, 2, 99, null, 1, 1, 1, 2372, 1258, 282, null ],
-    [ "Pedro, Mokomo Dukedom", "PSY", [ "Cerebral", "Shooter" ], 4, 25, 5, 3, 70, 1066998, 1, 1, 1, 1201, 708, 108, null ],
+    [ "Pedro, Mokomo Dukedom", "PSY", [ "Cerebral", "Shooter" ], 4, 25, 5, 3, 70, 1066998, 114, 167, 34, 1201, 708, 108, 1 ],
     [ "Pedro of the Treetops, Mokomo Dukedom", "PSY", [ "Cerebral", "Shooter" ], 5, 40, 4, 4, 99, 4000000, 1119, 613, 92, 2316, 1414, 179, 1 ],
     [ "Vander Decken IX", "INT", [ "Striker", "Shooter" ], 3, 13, null, 3, 50, 130703, null, null, null, null, null, null, null ],
     [ "Vander Decken IX, For My Dear Princess", "INT", [ "Striker", "Shooter" ], 4, 20, 4, 4, 99, 1000000, 1, 1, 1, 2065, 1205, 235, null ],
