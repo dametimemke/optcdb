@@ -3093,11 +3093,11 @@ window.evolutions = {
     },
     1946: {
         evolution: 1947,
-        evolvers: [  ]
+        evolvers: [ 82, 88, 93, 99, 104 ]
     },
     1948: {
         evolution: 1949,
-        evolvers: [  ]
+        evolvers: [ 81, 87, 92, 98, 103 ]
     },
     1950: {
         evolution: 1951,
