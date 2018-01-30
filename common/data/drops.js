@@ -1848,7 +1848,7 @@ window.drops = {
         },
         
         {
-            name: 'Binding and Bonds!',
+            name: 'Gorgon Sisters Escape from Mariejois!',
             thumb: 1933,
             nakama: 2112095,
             gamewith: 86343,
@@ -1856,11 +1856,11 @@ window.drops = {
             'All Difficulties': [ 1931, 1932, 1933, -1747, -1318, -1324, -1798, -1749, -1561 ]
         },
 		
-        {
-            name: 'Vander Decken FN',
+		{
+            name: 'Become my Ideal Type!!',
             thumb: 1947,
             nakama: null,
-            gamewith: null,
+            gamewith: 88585,
             'All Difficulties': [ 1946, 1948, -1763, -1364, -1562, -1678, -1796, -1800 ]
         },
         
