@@ -1848,12 +1848,20 @@ window.drops = {
         },
         
         {
-            name: 'Binding and Bonds!',
+            name: 'Gorgon Sisters Escape from Mariejois!',
             thumb: 1933,
             nakama: 2112095,
             gamewith: 86343,
             condition: 'Take 7% current Health in Environmental Damage every 2 turns',
             'All Difficulties': [ 1931, 1932, 1933, -1747, -1318, -1324, -1798, -1749, -1561 ]
+        },
+		
+		{
+            name: 'Become my Ideal Type!!',
+            thumb: 1947,
+            nakama: null,
+            gamewith: 88585,
+            'All Difficulties': [ 1946, 1948, -1763, -1364, -1562, -1678, -1796, -1800 ]
         },
         
         {
@@ -2601,9 +2609,10 @@ window.drops = {
         {
             name: 'Champion Challenge!',
             thumb: 1588,
+            global: true,
             gamewith: 56742,
             showManual: true,
-            condition: 'High chance of dropping 6* skillbooks. Only Evolvers and Booster characters will drop posters.',
+            condition: 'Low chance of dropping 6* skillbooks. 15 and 20 stamina islands available. Only Evolvers, Boosters and Manuals will drop.',
             'Black Clad Shanks': [ 301, 101, 96, 79, 90, 348, -530, -1707, -316, -910, -995, -1236, -1364, -465, -590, -967, -813, -888 ],
             'Donquixote Doflamingo': [ 304, 104, 88, 99, 82, 93, 351, -870, -312, -645, -838, -876, -880, -1190, -396, -586, -631, -567 ],
             'Trafalgar Law': [ 300, 100, 84, 95, 78, 89, 347, -964, -1045, -219, -308, -675, -991, -1077, -504, -1159, -212, -892 ],

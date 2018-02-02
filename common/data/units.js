@@ -1926,7 +1926,7 @@ window.units = [
     [ "Coby, Supply Ship Captain", "INT", [ "Driven", "Fighter" ], 4, 20, 5, 3, 70, 1066998, 241, 65, 46, 1348, 692, 185, 1 ],
     [ "Coby, Marine HQ Captain", "INT", [ "Driven", "Fighter" ], 5, 30, 4, 4, 99, 4000000, 1276, 648, 168, 2516, 1294, 350, 1 ],
     [ "Sir Crocodile, Remains of an Utopian Dream", "STR", [ "Cerebral", "Driven" ], '6+', 65, 4, 4, 99, 5000000, 1, 1, 1, 3701, 1502, 330, null ],
-    [ "Bartolomeo the Cannibal, Straw Hat Grand Fleet - \"Son's Cup\"", "QCK", [ "Driven", "Striker" ], '6+', 65, 4, 5, 99, 5000000, 1676, 801, 201, 3602, 1510, 380, null ],
+    [ "Bartolomeo the Cannibal, Straw Hat Grand Fleet - \"Son's Cup\"", "QCK", [ "Driven", "Striker" ], '6+', 65, 4, 5, 99, 5000000, 1676, 801, 201, 3602, 1510, 380, 1 ],
     [ "Eneru [Neo], 200,000,000 Volt Amaru", "DEX", [ "Striker", "Driven" ], 4, 30, 6, 3, 70, 1066998, 160, 157, 43, 1376, 720, 135, 1 ],
     [ "Eneru, Lightning Incarnate [Neo], 200,000,000 Volt Amaru", "DEX", [ "Striker", "Driven" ], 5, 50, 5, 5, 99, 5000000, 1294, 664, 95, 2530, 1465, 241, 1 ],
     [ "Boa Sandersonia, Fugitive Slave", "QCK", [ "Fighter", "Free Spirit" ], 4, 20, 5, 4, 99, 1000000, 198, 320, 34, 1530, 1125, 320, 1 ],
