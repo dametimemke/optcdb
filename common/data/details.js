@@ -17724,13 +17724,13 @@ window.details = {
         captain: "Boosts ATK of Driven characters by 1.75x and their HP by 1.1x",
         special: "Reduces crew's current HP by 80%, Empties all slots with [BOMB] orbs, deals severe typeless damage based on number of [BOMB] slots emptied to all enemies and boosts ATK against delayed enemies by 1.5x for 2 turns",
         specialName: "Fashion Pop",
-        specialNotes: "The exact multiplier used is chosen based on the number of [BLOCK] orbs consumed: 0 orbs - 10x ATK; 1 orb - 20x ATK; 2 orbs - 40x ATK; 3 orbs - 80x ATK; 4 orbs - 150x ATK; 5 orbs - 250x ATK; 6 orbs - 400x ATK."
+        specialNotes: "The exact multiplier used is chosen based on the number of [BOMB] orbs consumed: 0 orbs - 10x ATK; 1 orb - 20x ATK; 2 orbs - 40x ATK; 3 orbs - 80x ATK; 4 orbs - 150x ATK; 5 orbs - 250x ATK; 6 orbs - 400x ATK."
     },
     1887: {//Gladius
         captain: "Boosts ATK of Driven characters by 2.25x and their HP by 1.2x",
         special: "Reduces crew's current HP by 80%, Empties all slots with [BOMB] orbs, deals severe typeless damage based on number of [BOMB] slots emptied to all enemies and boosts ATK against delayed enemies by 1.5x for 2 turns",
         specialName: "Fashion Pop",
-        specialNotes: "The exact multiplier used is chosen based on the number of [BLOCK] orbs consumed: 0 orbs - 10x ATK; 1 orb - 20x ATK; 2 orbs - 40x ATK; 3 orbs - 80x ATK; 4 orbs - 150x ATK; 5 orbs - 250x ATK; 6 orbs - 400x ATK."
+        specialNotes: "The exact multiplier used is chosen based on the number of [BOMB] orbs consumed: 0 orbs - 10x ATK; 1 orb - 20x ATK; 2 orbs - 40x ATK; 3 orbs - 80x ATK; 4 orbs - 150x ATK; 5 orbs - 250x ATK; 6 orbs - 400x ATK."
     },
     1888: {//Cavendish
         captain: "Boosts ATK of Driven characters by 1.2x, recovers 0.5x character's RCV in HP at the end of each turn. Boosts ATK of Driven characters by 1.32x following a chain of same type attacks no lower than Good",
@@ -18836,7 +18836,7 @@ window.details = {
         ]
     },
     1942: {//Senor Pink
-        captain: "Boosts ATK of Free Spirit characters by ???x and recovers ???x character's RCV in HP at the end of each turn",
+        captain: "Boosts ATK of Free Spirit characters by 2x.",
         special: "Changes own orb into [STR], reduces Chain Multiplier Limit and Chain Coefficient Reduction by 3 turns. If your captain is a Free Spirit Character, boosts ATK against delayed enemies by 1.75x for 1 turn",
         specialName: "Manly Synchronized Swimming",
     },
@@ -18850,20 +18850,20 @@ window.details = {
                 "Name": "[DEX] Damage Reduction",
                 "description": [ 
                     "Level 1: Reduce damage taken from [DEX] characters by 1%",
-                    "Level 2: Reduce damage taken from [DEX] characters by ?%",
-                    "Level 3: Reduce damage taken from [DEX] characters by ?%",
-                    "Level 4: Reduce damage taken from [DEX] characters by ?%",
-                    "Level 5: Reduce damage taken from [DEX] characters by ?%"
+                    "Level 2: Reduce damage taken from [DEX] characters by 2%",
+                    "Level 3: Reduce damage taken from [DEX] characters by 3%",
+                    "Level 4: Reduce damage taken from [DEX] characters by 4%",
+                    "Level 5: Reduce damage taken from [DEX] characters by 5%"
                 ]
             },
             {
                 "Name": "Pinch Healing",
                 "description": [ 
-                    "Level 1: If HP is below ??% at the start of the turn, heals for ?x this character's RCV at the end of the turn each time you hit a Perfect with this character",
-                    "Level 2: If HP is below ??% at the start of the turn, heals for ?x this character's RCV at the end of the turn each time you hit a Perfect with this character",
-                    "Level 3: If HP is below ??% at the start of the turn, heals for ?x this character's RCV at the end of the turn each time you hit a Perfect with this character",
-                    "Level 4: If HP is below ??% at the start of the turn, heals for ?x this character's RCV at the end of the turn each time you hit a Perfect with this character",
-                    "Level 5: If HP is below ??% at the start of the turn, heals for ?x this character's RCV at the end of the turn each time you hit a Perfect with this character"
+                    "Level 1: If HP is below 5% at the start of the turn, heals for 1x this character's RCV at the end of the turn each time you hit a Perfect with this character",
+                    "Level 2: If HP is below 5% at the start of the turn, heals for 1.25x this character's RCV at the end of the turn each time you hit a Perfect with this character",
+                    "Level 3: If HP is below 5% at the start of the turn, heals for 1.5x this character's RCV at the end of the turn each time you hit a Perfect with this character",
+                    "Level 4: If HP is below 10% at the start of the turn, heals for 1.5x this character's RCV at the end of the turn each time you hit a Perfect with this character",
+                    "Level 5: If HP is below 20% at the start of the turn, heals for 1.5x this character's RCV at the end of the turn each time you hit a Perfect with this character"
                 ]
             },
         ]
@@ -18894,7 +18894,7 @@ window.details = {
             { "description": "Boosts base ATK by 75" },
             { "description": "Boosts base HP by 100" },
             { "description": "Reduce base Special Cooldown by 1 turn" },
-            { "description": "Aquire Sailor Ability 2: Makes [INT] orbs \"beneficial\" for Cerebral characters" },
+            { "description": "Aquire Sailor Ability 2: Makes [PSY] orbs \"beneficial\" for Cerebral characters" },
             { "description": "Aquire Potential 2: Enrage" },
         ],
         potential: [
@@ -19227,8 +19227,7 @@ window.details = {
         potentialNotes: "Enrage is activated when your crew took damage from your enemies in the previous turn"
     },
     1960: {//Sanji
-        captain: "Boosts ATK of [PSY] and Fighter characters by ???x and their HP by ???x. If you use \"Tears of Attraction\" this turn, boosts their ATK by ???x instead.",
-        captainNotes: "This effect is boosted if you use Charlotte Pudding's [1932/1963] special in the same turn",
+        captain: "Boosts ATK of [PSY] and Fighter characters by 2x.",
         special: "Changes [RCV], [TND] and [BOMB] orbs into Matching orbs, reduces Special Cooldown of Powerhouse and Fighter specials by 1 turn, and delays all enemies by 1 turn",
         specialName: "A Broad Smile of Life and Death",
         sailor: "Restores his own special by 3 turns when it is rewinded",
@@ -19236,15 +19235,14 @@ window.details = {
     },
     1961: {//Sanji
         captain: "Boosts ATK of [PSY] and Fighter characters by 2.25x and their HP by 1.2x. If you use \"Tears of Attraction\" this turn, boosts their ATK by 2.925x instead.",
-        captainNotes: "This effect is boosted if you use Charlotte Pudding's [1932/1963] special in the same turn",
+        captainNotes: "This effect is boosted if you use Charlotte Pudding's [1962/1963] special in the same turn",
         special: "Changes [RCV], [TND] and [BOMB] orbs into Matching orbs, reduces Special Cooldown of Powerhouse and Fighter specials by 1 turn, and delays all enemies by 1 turn",
         specialName: "A Broad Smile of Life and Death",
         sailor: "Restores his own special by 3 turns when it is rewinded",
         sailorNotes: "#{rewind : 3}",
     },
     1962: {//Pudding
-        captain: "Boosts ATK of [INT] and Fighter characters by ???x and their HP by ???x. If you use \"A Broad Smile of Life and Death\" this turn, boosts their ATK by ???x instead.",
-        captainNotes: "This effect is boosted if you use Sanji's [1960/1961] special in the same turn",
+        captain: "Boosts ATK of [INT] and Fighter characters by 2x.",
         special: "Changes [G], [BLOCK] and Badly Matching orbs into Matching orbs, reduces Bind and Silence duration by 3 turns and locks the chain multiplier at 2.5x for 1 turn",
         specialName: "Tears of Attraction",
         specialNotes: "#{silence}",

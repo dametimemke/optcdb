@@ -1735,7 +1735,7 @@ window.drops = {
         },
         
         {
-            name: 'Open the Cafe!',
+            name: 'Dead-On Prophecy?! Madam Sharley',
             thumb: 1670,
             global: true,
             nakama: 2038800,
@@ -2601,9 +2601,10 @@ window.drops = {
         {
             name: 'Champion Challenge!',
             thumb: 1588,
+            global: true,
             gamewith: 56742,
             showManual: true,
-            condition: 'High chance of dropping 6* skillbooks. Only Evolvers and Booster characters will drop posters.',
+            condition: 'Low chance of dropping 6* skillbooks. Only Evolvers and Booster characters will drop posters.',
             'Black Clad Shanks': [ 301, 101, 96, 79, 90, 348, -530, -1707, -316, -910, -995, -1236, -1364, -465, -590, -967, -813, -888 ],
             'Donquixote Doflamingo': [ 304, 104, 88, 99, 82, 93, 351, -870, -312, -645, -838, -876, -880, -1190, -396, -586, -631, -567 ],
             'Trafalgar Law': [ 300, 100, 84, 95, 78, 89, 347, -964, -1045, -219, -308, -675, -991, -1077, -504, -1159, -212, -892 ],
