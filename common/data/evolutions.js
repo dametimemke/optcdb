@@ -3063,7 +3063,7 @@ window.evolutions = {
         evolution: 1928,
         evolvers: [ 'skullQCK', 118, 85, 301, 267 ]
     },
-	1929: {
+    1929: {
         evolution: 1930,
         evolvers: [ 118, 266, 97, 302, 102 ]
     },
