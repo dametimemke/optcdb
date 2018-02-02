@@ -1750,7 +1750,7 @@ window.drops = {
             nakama: 2035243,
             gamewith: 62883,
             condition: 'Only [INT] and [PSY] orbs appear',
-            'All Difficulties': [ 1689, 1691, 1692, -1532, -1543, -449, -453, -1079, -1538, -967, -1346, -1349 ],
+            'All Difficulties': [ 1689, 1691, 1692, -1532, -1543, -1542, -449, -453, -1079, -1538, -967, -1346, -1349 ],
         },
         
         {
@@ -1862,6 +1862,14 @@ window.drops = {
             nakama: null,
             gamewith: 88585,
             'All Difficulties': [ 1946, 1948, -1763, -1364, -1562, -1678, -1796, -1800 ]
+        },
+        
+        {
+            name: 'My Ideal Type!',
+            thumb: 1947,
+            nakama: null,
+            gamewith: 88584,
+            'All Difficulties': [ 1946, 1948, -1763, -1796, -1800, -1364, -1678, -1562 ]
         },
         
     ],
@@ -2435,7 +2443,7 @@ window.drops = {
         },
         
         {
-            name: 'Valentines Day and White Day Characters',
+            name: 'White Day Characters',
             thumb: 1463,
             gamewith: 51651,
             'Luffy': [ 1462, 29, 563, 1059, 345, 192, 113, 108, 115, 116, 117, 1180, 266, 94, 83 ],
@@ -2445,9 +2453,11 @@ window.drops = {
         },
         
         {
-            name: 'Wedding Sanji',
+            name: 'Sweet Heart Memory',
             thumb: 1961,
-            'Sanji': [ 1960 ],
+            gamewith: 88896,
+            'Sanji': [ 1960, 83, 94, 226, 1180, 81, 87, 92, 98, 113 ],
+            'Pudding': [ 1962, 83, 94, 226, 1180, 82, 88, 93, 99, 114 ],
         },
 
         {
@@ -2597,7 +2607,7 @@ window.drops = {
         },
         
         {
-            name: 'Champion Challenge! Sugofest Exclusive Character Skillbooks!',
+            name: 'Champion Challenge!',
             thumb: 1588,
             global: true,
             gamewith: 56742,
