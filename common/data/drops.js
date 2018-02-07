@@ -1747,6 +1747,7 @@ window.drops = {
         {
             name: 'Kid Pirates!',
             thumb: 1690,
+            global: true,
             nakama: 2035243,
             gamewith: 62883,
             condition: 'Only [INT] and [PSY] orbs appear',
@@ -2285,6 +2286,7 @@ window.drops = {
         {
             name: 'Clash!! Vinsmoke Sanji',
             thumb: 1815,
+            global: true,
             nakama: 4063867,
             gamewith: 70374,
             Ultimate: [ 1814 ],
