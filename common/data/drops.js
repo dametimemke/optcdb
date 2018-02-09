@@ -1865,6 +1865,14 @@ window.drops = {
             'All Difficulties': [ 1946, 1948, -1763, -1796, -1800, -1364, -1678, -1562 ]
         },
         
+        {
+            name: 'The Devil\'s Return',
+            thumb: 1965,
+            nakama: null,
+            gamewith: null,
+            'All Difficulties': [ 1964, 1966, -1764, -1368, -1802, -1713, -1840, -1557 ]
+        },
+        
     ],
 
             
