@@ -19317,7 +19317,7 @@ window.details = {
         sailorNotes: "#{silence}",
     },
     1964: {//Oars
-        captain: "Boosts ATK of Powerhouse characters by ???x if HP is above ??% at the start of the turn",
+        captain: "Boosts ATK of Powerhouse characters by 2.75x if HP is above ??% at the start of the turn",
         special: "Deals ??x character's ATK in Typeless damage to all enemies, delays all enemies for 1 turn and changes adjacent orbs into [RCV] orbs",
         specialName: "Gomu Gomu no Butt Stomp",
     },
@@ -19333,12 +19333,14 @@ window.details = {
     },
     1967: {//Boa Hancock
         captain: "Boosts amount of Beli received by ?x",
+        captainNotes: "This effect will not happen when you become captain in the middle of the adventure."
         special: "Changes [BLOCK], [STR], [DEX], [QCK], [INT], and [PSY] orbs on Shooter and Cerebral characters into Matching orbs. If you are on a Treasure Map, amplifies the effects of orbs for Cerebral and Shooter characters depending on your Treasure Map Level for 1 turn",
         specialName: "An Important Confession from the Snake Princess",
         specialNotes: "Level 1-10: 1.75x orb boost<br\>Level 11-20: 2x orb boost<br\>Level 21+: 2.25x orb boost",
     },
     1968: {//Boa Hancock
         captain: "Boosts amount of Beli received by 3x",
+        captainNotes: "This effect will not happen when you become captain in the middle of the adventure."
         special: "Changes [BLOCK], [STR], [DEX], [QCK], [INT], and [PSY] orbs on Shooter and Cerebral characters into Matching orbs. If you are on a Treasure Map, amplifies the effects of orbs for Cerebral and Shooter characters depending on your Treasure Map Level for 1 turn",
         specialName: "An Important Confession from the Snake Princess",
         specialNotes: "Level 1-10: 1.75x orb boost<br\>Level 11-20: 2x orb boost<br\>Level 21+: 2.25x orb boost",
