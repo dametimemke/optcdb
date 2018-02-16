@@ -7194,7 +7194,7 @@ window.details = {
             { "description": "Aquire 1 additional Socket slot" },
             { "description": "Boosts base HP by 60" },
             { "description": "Aquire Sailor Ability 2: Restores his own special by 1 turn when it is rewinded" },
-            { "description": "Aquire Potential #: Critical Hit" },
+            { "description": "Aquire Potential 2: Critical Hit" },
         ],
         potential: [
             {
@@ -12185,7 +12185,7 @@ window.details = {
                 "cooldown": [ 22, 18 ],
             },
         ],
-        specialNotes: "Rainbow orbs are the beneficial form of [BLOCK] orbs. They can not be shuffled or swapped by you or your opponent. They count as benefittial orbs to any character. They do not count as STR orbs for Sakazuki but do act like Matching orbs for Black Clad Ace or Fujitora captain abilities.<br>#{stages}",
+        specialNotes: "Rainbow orbs are the beneficial form of [BLOCK] orbs. They can not be shuffled or swapped by you or your opponent. They count as beneficial orbs to any character. They do not count as STR orbs for Sakazuki but do act like Matching orbs for Black Clad Ace or Fujitora captain abilities.<br>#{stages}",
         sailor: "Changes all orbs into [RAINBOW] orbs at the start of the fight.",
         specialName: "Tears of Courage",
         limit: [
@@ -13583,11 +13583,11 @@ window.details = {
             { "description": "Boosts base RCV by 10" },
             { "description": "Boosts base RCV by 20" },
             { "description": "Boosts base RCV by 30" },
-            { "description": "Aquire Sailor Ability #: Boosts base ATK of Striker characters by 75" },
+            { "description": "Aquire Sailor Ability 1: Boosts base ATK of Striker characters by 75" },
             { "description": "Boosts base HP by 30" },
             { "description": "Boosts base HP by 40" },
             { "description": "Boosts base HP by 50" },
-            { "description": "Aquire Sailor Ability #: Boosts base HP of Driven characters by 75" },
+            { "description": "Aquire Sailor Ability 2: Boosts base HP of Driven characters by 75" },
             { "description": "Boosts base HP by 60" },
             { "description": "Aquire 1 additional Socket slot" },
             { "description": "Aquire Potential 2: Slot Bind Self-reduction" },
@@ -15252,7 +15252,7 @@ window.details = {
             { "description": "Boosts base ATK by 30" },
             { "description": "Boosts base HP by 30" },
             { "description": "Boosts base ATK by 50" },
-            { "description": "Aquire Sailor Ability #: Makes [DEX] orbs \"beneficial\" for this unit" },
+            { "description": "Aquire Sailor Ability 1: Makes [DEX] orbs \"beneficial\" for this unit" },
             { "description": "Boosts base RCV by 30" },
             { "description": "Boosts base HP by 60" },
             { "description": "Boosts base HP by 90" },
@@ -17764,7 +17764,7 @@ window.details = {
         captain: "Boosts ATK of Driven characters by 1.75x and their HP by 1.1x",
         special: "Reduces crew's current HP by 80%, Empties all slots with [BOMB] orbs, deals severe typeless damage based on number of [BOMB] slots emptied to all enemies and boosts ATK against delayed enemies by 1.5x for 2 turns",
         specialName: "Fashion Pop",
-        specialNotes: "The exact multiplier used is chosen based on the number of [BLOCK] orbs consumed: 0 orbs - 10x ATK; 1 orb - 20x ATK; 2 orbs - 40x ATK; 3 orbs - 80x ATK; 4 orbs - 150x ATK; 5 orbs - 250x ATK; 6 orbs - 400x ATK."
+        specialNotes: "The exact multiplier used is chosen based on the number of [BOMB] orbs consumed: 0 orbs - 10x ATK; 1 orb - 20x ATK; 2 orbs - 40x ATK; 3 orbs - 80x ATK; 4 orbs - 150x ATK; 5 orbs - 250x ATK; 6 orbs - 400x ATK."
     },
     1887: {//Gladius
         captain: "Boosts ATK of Driven characters by 2.25x and their HP by 1.2x",
@@ -19293,15 +19293,14 @@ window.details = {
     },
     1961: {//Sanji
         captain: "Boosts ATK of [PSY] and Fighter characters by 2.25x and their HP by 1.2x. If you use \"Tears of Attraction\" this turn, boosts their ATK by 2.925x instead.",
-        captainNotes: "This effect is boosted if you use Charlotte Pudding's [1932/1963] special in the same turn",
+        captainNotes: "This effect is boosted if you use Charlotte Pudding's [1962/1963] special in the same turn",
         special: "Changes [RCV], [TND] and [BOMB] orbs into Matching orbs, reduces Special Cooldown of Powerhouse and Fighter specials by 1 turn, and delays all enemies by 1 turn",
         specialName: "A Broad Smile of Life and Death",
         sailor: "Restores his own special by 3 turns when it is rewinded",
         sailorNotes: "#{rewind : 3}",
     },
     1962: {//Pudding
-        captain: "Boosts ATK of [INT] and Fighter characters by ???x and their HP by ???x. If you use \"A Broad Smile of Life and Death\" this turn, boosts their ATK by ???x instead.",
-        captainNotes: "This effect is boosted if you use Sanji's [1960/1961] special in the same turn",
+        captain: "Boosts ATK of [INT] and Fighter characters by 2x.",
         special: "Changes [G], [BLOCK] and Badly Matching orbs into Matching orbs, reduces Bind and Silence duration by 3 turns and locks the chain multiplier at 2.5x for 1 turn",
         specialName: "Tears of Attraction",
         specialNotes: "#{silence}",
@@ -19318,7 +19317,7 @@ window.details = {
         sailorNotes: "#{silence}",
     },
     1964: {//Oars
-        captain: "Boosts ATK of Powerhouse characters by ???x if HP is above ??% at the start of the turn",
+        captain: "Boosts ATK of Powerhouse characters by 2.25x if HP is above ??% at the start of the turn",
         special: "Deals ??x character's ATK in Typeless damage to all enemies, delays all enemies for 1 turn and changes adjacent orbs into [RCV] orbs",
         specialName: "Gomu Gomu no Butt Stomp",
     },
@@ -19355,7 +19354,7 @@ window.details = {
         specialName: "10,000 Kilo Guillotine - Cake Slice",
     },
     1971: {//Sabo
-        captain: "Not Translated",
+        captain: "Boosts ATK of Cerebral characters by 1.3x and their HP and RCV by 1.05x and boosts chain by 1.1x if HP is above 70% or below 30% at the start of the turn",
         special: "If your Captain is a Cerebral character, changes [STR], [DEX], [QCK], [INT], and [PSY] orbs on Cerebral characters into Matching orbs, reduces the defense of all enemies by 100% and boosts ATK against enemies with reduced defense by 1.75x for 1 turn",
         specialName: "Blissful Selection",
     },
@@ -19437,13 +19436,30 @@ window.details = {
         ],
         potentialNotes: "Enrage is activated when your crew took damage from your enemies in the previous turn"
     },
-    1975: {
+    1973: {//Basil Hawkins
+        captain: "Boosts ATK of Cerebral units by ?x, if unit has a matching orb boosts by ?x instead. Makes [STR] orbs beneficial to Cerebral units",
+        captainNotes: "#{beneficial}"
+        special: "Cuts the HP of 1 enemy by 20%, change [TND], [Empty] and Badly Matching orbs to matching, and if your captain is a Cerebral unit completely remove paralysis",
+        specialName: "Heartbeat Strike",
+        specialNotes: "#{stages}", 
+        sailor: "Not Yet Translated",
+    },
+    1974: {//Basil Hawkins
+        captain: "Boosts ATK of Cerebral units by 2.5x, if unit has a matching orb boosts by 3.25x instead. Makes [STR] orbs beneficial to Cerebral units",
+        captainNotes:
+        special: "Cuts the HP of 1 enemy by 20%, change [TND], [Empty] and Badly Matching orbs to matching, and if your captain is a Cerebral unit completely remove paralysis",
+        specialName: "Heartbeat Strike",
+        specialNotes: "#{stages}", 
+        sailor: "Not Yet Translated",
+        limit: "This Character has Limit Break",
+    },
+    1975: {//X Drake
         captain: "Boosts ATK of all characters by 2x if HP is below 30% at the start of the turn",
         special: "Deals 25x? ATK in [QCK] damage to one enemy. If HP above ??% then changes [RCV], [TND], [EMPTY], [BOMB] and [BLOCK] orbs into matching orbs and if HP below ?% then changes adjacent orbs into matching orbs",
         specialName: "Double Edge of Revolt [Neo]",
         sailor: "When HP is below ??% at the start of the turn, boosts base ATK of all characters by 40",
     },
-    1976: {
+    1976: {//X Drake
         captain: "Boosts ATK of all characters by 2.5x if HP is below 30% at the start of the turn",
         special: "Deals 25x? ATK in [QCK] damage to one enemy. If HP above ??% then changes [RCV], [TND], [EMPTY], [BOMB] and [BLOCK] orbs into matching orbs and if HP below ?% then changes adjacent orbs into matching orbs",
         specialName: "Double Edge of Revolt [Neo]",

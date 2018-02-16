@@ -686,7 +686,7 @@ window.drops = {
         },
         
         {
-            name: 'Punk Hazard Burning Lands - Laboratory',
+            name: 'Punk Hazard - Burning Lands to Laboratory',
             shortName: 'Punk Hazard 1',
             thumb: 1637,
             global: true,
@@ -710,7 +710,7 @@ window.drops = {
         },
         
         {
-            name: 'Punk Hazard Ice Lands - First Floor Room R',
+            name: 'Punk Hazard - Ice Lands to First Floor Room R',
             shortName: 'Punk Hazard 2',
             thumb: 1716,
             global: true,
@@ -733,7 +733,7 @@ window.drops = {
         },
         
         {
-            name: 'Dressrosa - Harbor Town Acacia Colosseum',
+            name: 'Dressrosa - Port Town Acacia to Coliseum',
             shortName: 'Dressrosa 1',
             thumb: 1782,
             completion: '5x Rainbow Gems',
@@ -1735,7 +1735,7 @@ window.drops = {
         },
         
         {
-            name: 'Open the Cafe!',
+            name: 'Dead-On Prophecy?! Madam Sharley',
             thumb: 1670,
             global: true,
             nakama: 2038800,
@@ -1747,6 +1747,7 @@ window.drops = {
         {
             name: 'Kid Pirates!',
             thumb: 1690,
+            global: true,
             nakama: 2035243,
             gamewith: 62883,
             condition: 'Only [INT] and [PSY] orbs appear',
@@ -1862,6 +1863,14 @@ window.drops = {
             nakama: null,
             gamewith: 88584,
             'All Difficulties': [ 1946, 1948, -1763, -1796, -1800, -1364, -1678, -1562 ]
+        },
+        
+        {
+            name: 'Devil Oars, Day of the Second Coming',
+            thumb: 1965,
+            nakama: null,
+            gamewith: 91449,
+            'All Difficulties': [ 1964, 1966, -1764, -1368, -1802, -1713, -1840, -1557 ]
         },
         
     ],
@@ -2285,6 +2294,7 @@ window.drops = {
         {
             name: 'Clash!! Vinsmoke Sanji',
             thumb: 1815,
+            global: true,
             nakama: 4063867,
             gamewith: 70374,
             Ultimate: [ 1814 ],
@@ -2480,7 +2490,8 @@ window.drops = {
             name: '3rd Anniversary Celebration! Duel! Luffy',
             thumb: 1600,
             nakama: 6117639,
-            '30 Stamina': [ 1600 ]
+            condition: 'Only 30 Stamina has a Luffy drop. 40 Stamina drops all tomb types.'
+            '30 Stamina': [ 1600, 189, 190, 191, 192, 193, 118, 110, 111, 112, 113, 114, 117, 116, 115 ]
         },
         
         {
@@ -2609,9 +2620,10 @@ window.drops = {
         {
             name: 'Champion Challenge!',
             thumb: 1588,
+            global: true,
             gamewith: 56742,
             showManual: true,
-            condition: 'High chance of dropping 6* skillbooks. Only Evolvers and Booster characters will drop posters.',
+            condition: 'Low chance of dropping 6* skillbooks. Only Evolvers and Booster characters will drop posters.',
             'Black Clad Shanks': [ 301, 101, 96, 79, 90, 348, -530, -1707, -316, -910, -995, -1236, -1364, -465, -590, -967, -813, -888 ],
             'Donquixote Doflamingo': [ 304, 104, 88, 99, 82, 93, 351, -870, -312, -645, -838, -876, -880, -1190, -396, -586, -631, -567 ],
             'Trafalgar Law': [ 300, 100, 84, 95, 78, 89, 347, -964, -1045, -219, -308, -675, -991, -1077, -504, -1159, -212, -892 ],
