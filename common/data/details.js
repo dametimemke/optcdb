@@ -19441,7 +19441,7 @@ window.details = {
         captainNotes: "#{beneficial}"
         special: "Cuts the HP of 1 enemy by 20%, change [TND], [Empty] and Badly Matching orbs to matching, and if your captain is a Cerebral unit completely remove paralysis",
         specialName: "Heartbeat Strike",
-        specialNotes: "#{beneficial}", 
+        specialNotes: "#{stages}", 
         sailor: "Not Yet Translated",
     },
     1974: {//Basil Hawkins
