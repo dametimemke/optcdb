@@ -19436,30 +19436,13 @@ window.details = {
         ],
         potentialNotes: "Enrage is activated when your crew took damage from your enemies in the previous turn"
     },
-    1973: {//Basil Hawkins
-        captain: "Boosts ATK of Cerebral units by ?x, if unit has a matching orb boosts by ?x instead. Makes [STR] orbs beneficial to Cerebral units",
-        captainNotes: "#{beneficial}"
-        special: "Cuts the HP of 1 enemy by 20%, change [TND], [Empty] and Badly Matching orbs to matching, and if your captain is a Cerebral unit completely remove paralysis",
-        specialName: "Heartbeat Strike",
-        specialNotes: "#{beneficial}", 
-        sailor: "Not Yet Translated",
-    },
-    1974: {//Basil Hawkins
-        captain: "Boosts ATK of Cerebral units by 2.5x, if unit has a matching orb boosts by 3.25x instead. Makes [STR] orbs beneficial to Cerebral units",
-        captainNotes:
-        special: "Cuts the HP of 1 enemy by 20%, change [TND], [Empty] and Badly Matching orbs to matching, and if your captain is a Cerebral unit completely remove paralysis",
-        specialName: "Heartbeat Strike",
-        specialNotes: "#{stages}", 
-        sailor: "Not Yet Translated",
-        limit: "This Character has Limit Break",
-    },
-    1975: {//X Drake
+    1975: {
         captain: "Boosts ATK of all characters by 2x if HP is below 30% at the start of the turn",
         special: "Deals 25x? ATK in [QCK] damage to one enemy. If HP above ??% then changes [RCV], [TND], [EMPTY], [BOMB] and [BLOCK] orbs into matching orbs and if HP below ?% then changes adjacent orbs into matching orbs",
         specialName: "Double Edge of Revolt [Neo]",
         sailor: "When HP is below ??% at the start of the turn, boosts base ATK of all characters by 40",
     },
-    1976: {//X Drake
+    1976: {
         captain: "Boosts ATK of all characters by 2.5x if HP is below 30% at the start of the turn",
         special: "Deals 25x? ATK in [QCK] damage to one enemy. If HP above ??% then changes [RCV], [TND], [EMPTY], [BOMB] and [BLOCK] orbs into matching orbs and if HP below ?% then changes adjacent orbs into matching orbs",
         specialName: "Double Edge of Revolt [Neo]",
