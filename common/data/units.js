@@ -1960,7 +1960,7 @@ window.units = [
     [ "Shirahoshi, You're My Valentine", "DEX", [ "Cerebral", "Free Spirit" ], 5, 30, 5, 4, 99, 4000000, 1024, 422, 162, 2108, 1154, 409, 1 ],
     [ "Sanji, Brimming Bridegroom", "PSY", [ "Powerhouse", "Fighter" ], 4, 12, 4, 3, 50, 261406, 184, 109, 41, 1142, 542, 102, 1 ],
     [ "Sanji, A Deadly Plan to Separate the Couple", "PSY", [ "Powerhouse", "Fighter" ], 5, 20, 4, 5, 99, 3000000, 928, 472, 82, 2146, 1324, 201, 1 ],
-	[ "Pudding, Deceiving Bride", "INT", [ "Cerebral", "Fighter" ], 4, 12, 6, 3, 50, 261406, 114, 81, 62, 1048, 451, 148, 1 ],
+    [ "Pudding, Deceiving Bride", "INT", [ "Cerebral", "Fighter" ], 4, 12, 6, 3, 50, 261406, 114, 81, 62, 1048, 451, 148, 1 ],
     [ "Pudding, A Deadly Plan to Separate the Couple", "INT", [ "Cerebral", "Fighter" ], 5, 20, 5, 5, 99, 3000000, 834, 381, 128, 1972, 1111, 301, 1 ],
     [ "Oars, Resurrected Legend", "QCK", [ "Driven", "Powerhouse" ], 3, 12, null, 3, 50, 130703, 232, 100, 0, 1859, 908, 0, null ],
     [ "The Devil Oars, Resurrected Legend", "QCK", [ "Driven", "Powerhouse" ], 4, 20, 4, 4, 99, 1000000, 1690, 825, 0, 2975, 1454, 0, 1 ],
