@@ -228,6 +228,7 @@
         var id = ('0000' + n).slice(-4).replace(/(057[54])/, '0$1'); // missing aokiji image
         switch(id){
             case '0742': return 'https://onepiece-treasurecruise.com/wp-content/uploads/f0742-2.png'; break;
+            case '3000': return 'https://onepiece-treasurecruise.com/wp-content/uploads/f3000_1.png'; break;
             //case '2262': return 'http://onepiece-treasurecruise.com/en/wp-content/uploads/sites/2/f5011.png'; break;
             //case '2263': return 'http://onepiece-treasurecruise.com/en/wp-content/uploads/sites/2/f5012.png'; break;
             //case '2500': return 'http://onepiece-treasurecruise.com/en/wp-content/uploads/sites/2/f2500.png'; break;
@@ -275,6 +276,8 @@
             //case '2930': return '../res/character_11199_t1.png'; break;
             case '3380': return '../res/character_11333_t1.png'; break;
             case '3381': return '../res/KDugejE.png'; break;
+            case '3382': return '../res/character_11615_t1.png'; break;
+            case '3383': return '../res/character_11760_t.png'; break;
             //case '2909': return '../res/character_11173_t1.png'; break;
             //case '3370': return '../res/character_10891_t1.png'; break;
             //case '2440': return '../res/character_10643_t1.png'; break;
@@ -540,6 +543,22 @@
             case '5256': return '../res/ZPSk7PQ.png'; break;
             case '5257': return '../res/KDugejE_qck.png'; break;
             case '5258': return '../res/KDugejE_int.png'; break;
+            case '5259': return '../res/character_11532_t1.png'; break;
+            case '5260': return '../res/character_11533_t1.png'; break;
+            case '5261': return '../res/character_11534_t1_psy.png'; break;
+            case '5262': return '../res/character_11534_t1_int.png'; break;
+            case '5263': return '../res/character_11661_t1.png'; break;
+            case '5264': return '../res/character_11660_t1.png'; break;
+            case '5265': return '../res/character_11662_t1_dex.png'; break;
+            case '5266': return '../res/character_11662_t1_psy.png'; break;
+            case '5267': return '../res/character_11582_t1.png'; break;
+            case '5268': return '../res/character_11583_t1.png'; break;
+            case '5269': return '../res/character_11586_t1_str.png'; break;
+            case '5270': return '../res/character_11586_t1_psy.png'; break;
+            case '5271': return '../res/character_11584_t1.png'; break;
+            case '5272': return '../res/character_11585_t1.png'; break;
+            case '5273': return '../res/character_11587_t1_str.png'; break;
+            case '5274': return '../res/character_11587_t1_psy.png'; break;
             default: break;
         }
         return 'https://onepiece-treasurecruise.com/wp-content/uploads/f' + id + '.png';

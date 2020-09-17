@@ -577,7 +577,7 @@ window.ships = [
     { //43
         name: "Megalo",
         thumb: 'ship_0045_c.png',
-        description: 'Boosts HP of all characters by 1.25x. If your Captain is [PSY] or [INT], boosts ATK of all characters by 1.5x, boosts captain\'s RCV by 200 and reduces damage received by 10%. Special: Locks all orbs for 1 turn (Cooldown: 8 turns).',
+        description: 'Boosts HP of all characters by 1.25x. If your Captain is a [PSY] or [INT] character, boosts ATK of all characters by 1.5x, boosts captain\'s RCV by 200 and reduces damage received by 10%. Special: Locks all orbs for 1 turn (Cooldown: 8 turns).',
         atk: function(p) {
             return (p.captain.type == "PSY" || p.captain.type == "INT") ? [ 1.2, 1.3, 1.3, 1.4, 1.4, 1.4, 1.5, 1.5, 1.5, 1.5 ][p.boatLevel - 1] : 1;
         },
@@ -681,13 +681,44 @@ window.ships = [
     { //51
         name: "Victoria Punk",
         thumb: null,
-        description: 'Boosts HP by 1.2x and slightly increases the appearance rate of TND orbs. If your captain is [STR] or [DEX], boosts ATK of all characters by 1.55x. If a character has a [TND], [BOMB], [WANO] or [SUPERBOMB] orb, boost their ATK by 1.65x instead. Special: Reduces all enemies\' Barrier duration by 1 turn (Cooldown: 10 turns).',
+        description: 'Boosts HP by 1.2x and slightly increases the appearance rate of TND orbs. If your captain is a [STR] or [DEX] character, boosts ATK of all characters by 1.55x. If a character has a [TND], [BOMB], [WANO] or [SUPERBOMB] orb, boost their ATK by 1.65x instead. Special: Reduces all enemies\' Barrier duration by 1 turn (Cooldown: 10 turns).',
         atk: function(p) {
             if (p.captain) return (p.captain.type == "STR" || p.captain.type == "DEX") ? (p.p.orb == 'superbomb' || p.p.orb == 'meat' || p.p.orb == 'wano') ? [ 1.2, 1.25, 1.3, 1.35, 1.4, 1.45, 1.5, 1.55, 1.6, 1.65 ][p.boatLevel - 1] : [ 1.1, 1.15, 1.2, 1.25, 1.3, 1.35, 1.4, 1.45, 1.5, 1.55 ][p.boatLevel - 1] : 1;
             else return 1;
         },
         hp: function(p) {
             return [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1.2 ][p.boatLevel - 1];
+        },
+    },
+    
+    
+    
+    { //52
+        name: "Liberal Hind",
+        thumb: null,
+        description: 'Reduces cooldown of all specials by 1 turn, boosts captain\'s RCV by 500, recovers 1,000 HP at the end of the turn. If your captain is a Free Spirit, Slasher or Cerebral character, boosts ATK of all characters by 1.6x. If there is 6 [PSY] characters in your crew, boosts ATK by 1.1x additionaly. Special: Reduces Special Cooldown of [PSY] characters by 1 turn (Cooldown: 10 turns).',
+        atk: function(p) {
+            var mult = 1;
+            if (p.colorCount.PSY>=6) mult = [ 1, 1, 1, 1.05, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1 ][p.boatLevel - 1];
+            if (p.captain) return (p.captain.class.has("Free Spirit") || p.captain.class.has("Slasher") || p.captain.class.has("Cerebral")) ? mult*[ 1.2, 1.25, 1.3, 1.3, 1.3, 1.3, 1.35, 1.4, 1.5, 1.6 ][p.boatLevel - 1] : mult;
+            else return mult;
+        },
+        heal: function(p) {
+            return [ 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000 ][p.boatLevel - 1];
+        }
+    },
+    
+    
+    
+    { //53
+        name: "Amphibious Nostra Castello",
+        thumb: null,
+        description: 'Reduces cooldown of all specials by 1 turn, Boosts ATK of [STR], [PSY] and [INT] characters by 1.55x and their HP by 1.4x. If HP is above 99% or below 30% at the start of the turn, boosts ATK of [STR], [PSY] and [INT] characters by 1.7x.',
+        atk: function(p) {
+            return p.unit.type == "STR" || p.unit.type == "PSY" || p.unit.type == "INT" ? (p.p.percHP <= 30.0 || p.p.percHP >= 99.0) ? [ 1.2, 1.2, 1.2, 1.3, 1.3, 1.4, 1.6, 1.6, 1.7, 1.7 ][p.boatLevel - 1] : [ 1.2, 1.2, 1.2, 1.3, 1.3, 1.3, 1.4, 1.4, 1.55, 1.55 ][p.boatLevel - 1] : 1;
+        },
+        hp: function(p) {
+            return p.unit.type == "STR" || p.unit.type == "PSY" || p.unit.type == "INT" ? [ 1, 1.1, 1.2, 1.2, 1.3, 1.3, 1.3, 1.4, 1.4, 1.4 ][p.boatLevel - 1] : 1;
         },
     },
 

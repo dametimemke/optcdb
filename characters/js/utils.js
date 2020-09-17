@@ -5,7 +5,7 @@ var CharUtils = { };
 /* * * * * Reverse drop map * * * * */
 
 var reverseDropMap = null;
-var marks = { 'Story Island': 1, 'Booster and Evolver Island': 2, 'Fortnight': 4, 'Raid': 8, 'Coliseum': 16, 'Treasure Map': 64, 'Ambush': 256, 'Kizuna Clash': 1024 };
+var marks = { 'Story Island': 1, 'Booster and Evolver Island': 2, 'Rookie Mission': 4, 'Fortnight': 8, 'Raid': 16, 'Coliseum': 64, 'Treasure Map': 256, 'Ambush': 1024, 'Kizuna Clash': 4096 };
 
 var generateReverseDropMap = function() {
     reverseDropMap = { };
@@ -111,6 +111,9 @@ CharUtils.searchDropLocations = function(id) {
                 var name = window.drops[type][island].name;
                 if (type == 'Fortnight') name += ' Fortnight';
                 else if (type == 'Raid') name += ' Raid';
+                else if (type == 'Coliseum') name += ' Coliseum';
+                else if (type == 'Treasure Map') name += ' Treasure Map';
+                else if (type == 'Kizuna Clash') name += ' Kizuna';
                 var data = { name: name, thumb: window.drops[type][island].thumb, data: temp };
                 if (type == 'Story Island' || window.drops[type][island].hasOwnProperty('day'))
                     data.bonuses = CharUtils.getIslandBonuses(island, window.drops[type][island].day);
