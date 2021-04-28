@@ -691,7 +691,7 @@ filters.abilityToString = function() {
               }
               break;
             case "hinderance":
-              e += `${effect.chance}% chance to inflict ${arrayToString(effect.attributes)}`;
+              e += effect.chance ? `${effect.chance}% chance to inflict ${arrayToString(effect.attributes)}` : `Reduces ${effect.percent}% of ${arrayToString(effect.attributes)}`;
               break;
             case "boon":
               e += `${effect.chance ? effect.chance+ "% chance to " : ""}`;
