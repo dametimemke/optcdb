@@ -948,14 +948,14 @@ window.drops = {
             completion: '5x Rainbow Gems',
             gamewith: 155967,
             '01': [ 2595, 2162 ],
-            '02': [  ],
+            '02': [ 2589, 2590, 2591, 2592, 2593, 2594 ],
             '03': [ 2127, 2128, 2129, 2130 ],
             '04': [ 2288 ],
             '05': [ 2162 ],
-            '06': [  ],
-            '07': [  ],
+            '06': [ 2589, 2590, 2591, 2592, 2593, 2594 ],
+            '07': [ 2589, 2590, 2591, 2592, 2593, 2594 ],
             '08': [ 2596 ],
-            '09': [  ],
+            '09': [ 2589, 2590, 2591, 2592, 2593, 2594 ],
             '10': [ 2229, 2598, 2599 ],
         },
 
@@ -1016,7 +1016,7 @@ window.drops = {
             gamewith: 246450,
             '01': [ 3194 ],
             '02': [ 3195 ],
-            '03': [  ],
+            '03': [ 3193 ],
             '04': [  ],
             '05': [  ],
             '06': [ 3196 ],
@@ -5955,7 +5955,7 @@ window.drops = {
             thumb: 3339,
             nakama: null,
             gamewith: null,
-            'Coast of Wano': [ 3339 ]
+            'Celebration Sea': [ 3339 ]
         },
 
         {
@@ -5968,8 +5968,17 @@ window.drops = {
         },
 
         {
-            name: 'Stussy',
+            name: 'Kaido',
             dropID: 'treasuremap47',
+            thumb: 3389,
+            nakama: null,
+            gamewith: null,
+            'Coast of Wano': [ 3389 ]
+        },
+
+        {
+            name: 'Stussy',
+            dropID: 'treasuremap48',
             thumb: 3416,
             nakama: null,
             gamewith: null,
@@ -6349,6 +6358,16 @@ window.drops = {
             'Kizuna Exchange': [ 9047, 9048 ],
         },
 
+        {
+            name: 'Ivankov',
+            dropID: 'bond24',
+            thumb: 3419,
+            nakama: null,
+            gamewith: null,
+            'All Difficulties': [ 3419 ],
+            'Kizuna Exchange': [ 9049 ],
+        },
+
     ],
 
 
@@ -6622,6 +6641,7 @@ window.drops = {
             'Round 5': [ 3111 ],
             'Round 6': [ 3234 ],
             'Round 7': [ 3264 ],
+            'Round 8': [ 3420 ],
         },
 
         {
