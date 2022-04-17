@@ -418,7 +418,7 @@ angular.module('optc') .run(function($rootScope, $timeout, $storage, MATCHER_IDS
         if (filters.noMissing && !characterLog.hasOwnProperty(id)) return false;
         // filter by orb controllers
         if ($rootScope.filters.custom[MATCHER_IDS['special.OrbControllers']] &&
-                (tableData.parameters.filters.ctrlFrom || tableData.parameters.filters.ctrlTo)) {
+                ((tableData.parameters.filters.ctrlFrom && tableData.parameters.filters.ctrlFrom.length > 0) || (tableData.parameters.filters.ctrlTo && tableData.parameters.filters.ctrlTo.length > 0))) {
             var orbData = CharUtils.getOrbControllerData(id);
             if (!orbData) return false;
             var from = tableData.parameters.filters.ctrlFrom || [ ], to = tableData.parameters.filters.ctrlTo || [ ];
