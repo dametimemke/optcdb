@@ -48,6 +48,25 @@
         ng-click="filters.superTypeUnits = !filters.superTypeUnits">Show Super Type/Class Character Units</span>
 </div>
 
+<div class="filter-container expandable" id="rumble-style-filter" ng-class="{ expanded: !filters.rumbleStyleEnabled }">
+    <span class="filter-header" ng-click="filters.rumbleStyleEnabled = !filters.rumbleStyleEnabled">
+        Rumble style filters
+        <i class="pull-right fa fa-{{filters.rumbleStyleEnabled ? 'chevron-up' : 'chevron-down'}}"></i>
+    </span>
+    <span class="filter width-12 exc" ng-model="filters.styleATK" ng-class="{ active: filters.styleATK }"
+        ng-click="filters.styleATK = !filters.styleATK">ATK</span>
+    <span class="filter width-12 exc" ng-model="filters.styleDEF" ng-class="{ active: filters.styleDEF }"
+        ng-click="filters.styleDEF = !filters.styleDEF">DEF</span>
+    <span class="filter width-12 exc" ng-model="filters.styleRCV" ng-class="{ active: filters.styleRCV }"
+        ng-click="filters.styleRCV = !filters.styleRCV">RCV</span>
+    <span class="filter width-12 exc" ng-model="filters.styleSPT" ng-class="{ active: filters.styleSPT }"
+        ng-click="filters.styleSPT = !filters.styleSPT">SPT</span>
+    <span class="filter width-12 exc" ng-model="filters.styleDBF" ng-class="{ active: filters.styleDBF }"
+        ng-click="filters.styleDBF = !filters.styleDBF">DBF</span>
+    <span class="filter width-12 exc" ng-model="filters.styleBAL" ng-class="{ active: filters.styleBAL }"
+        ng-click="filters.styleBAL = !filters.styleBAL">BAL</span>
+</div>
+
 <div class="filter-container expandable" id="class-filter"
      ng-class="{ expanded: !filters.classEnabled }">
     <span class="filter-header" ng-click="filters.classEnabled = !filters.classEnabled">
