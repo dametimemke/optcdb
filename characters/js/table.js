@@ -146,6 +146,12 @@ angular.module('optc') .run(function($rootScope, $timeout, $storage) {
                 }
             }
         }
+        //filter rumble style
+        if (filters.styleATK && unit.pirateFest.class !== "ATK") return false;
+        if (filters.styleDEF && unit.pirateFest.class !== "DEF") return false;
+        if (filters.styleRCV && unit.pirateFest.class !== "RCV") return false;
+        if (filters.styleSPT && unit.pirateFest.class !== "SPT") return false;
+        if (filters.styleDBF && unit.pirateFest.class !== "DBF") return false;
         // filter by stars
         if (filters.stars && filters.stars.length && filters.stars.indexOf(unit.stars) == -1) return false;
         // filter by cost
